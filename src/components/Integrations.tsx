@@ -1,137 +1,153 @@
 'use client';
-import React from 'react';
-import { Check, BookOpen, Zap, GraduationCap } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Target, TrendingUp, Sparkles, ShieldCheck, Clock, Globe } from 'lucide-react';
+
+const bentoCards = [
+    {
+        id: 1,
+        size: 'col-span-1 md:col-span-2',
+        icon: Target,
+        iconBg: 'bg-amber-500/10 border-amber-500/20',
+        iconColor: 'text-amber-400',
+        title: 'Subject Skills Breakdown',
+        desc: 'AI identifies 5–10 key concepts per session and tracks mastery over time.',
+        visual: (
+            <div className="mt-6 space-y-3">
+                {[
+                    { label: 'Photosynthesis', pct: 88, bar: 'bg-blue-500' },
+                    { label: 'Cell Division', pct: 61, bar: 'bg-indigo-500' },
+                    { label: 'DNA Structure', pct: 44, bar: 'bg-violet-500' },
+                ].map(({ label, pct, bar }) => (
+                    <div key={label} className="flex items-center gap-3">
+                        <span className="text-[12px] text-slate-400 font-medium w-28 shrink-0">{label}</span>
+                        <div className="flex-1 progress-bar">
+                            <div className={`progress-bar-fill ${bar}`} style={{ width: `${pct}%` }} />
+                        </div>
+                        <span className="text-[11px] font-mono text-slate-500 w-8 text-right">{pct}%</span>
+                    </div>
+                ))}
+            </div>
+        ),
+    },
+    {
+        id: 2,
+        size: 'col-span-1',
+        icon: Clock,
+        iconBg: 'bg-blue-500/10 border-blue-500/20',
+        iconColor: 'text-blue-400',
+        title: '< 2s Response',
+        desc: 'Answers and explanations delivered in under 2 seconds. Never lose your study flow.',
+        visual: (
+            <div className="mt-6 flex items-center justify-center">
+                <div className="relative w-20 h-20">
+                    <svg className="w-20 h-20 -rotate-90" viewBox="0 0 80 80">
+                        <circle cx="40" cy="40" r="32" strokeWidth="8" className="stroke-white/5 fill-none" />
+                        <circle cx="40" cy="40" r="32" strokeWidth="8" strokeDasharray="200.96" strokeDashoffset="30" strokeLinecap="round" className="stroke-blue-500 fill-none" />
+                    </svg>
+                    <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="text-[15px] font-black text-white">1.4s</span>
+                    </div>
+                </div>
+            </div>
+        ),
+    },
+    {
+        id: 3,
+        size: 'col-span-1',
+        icon: ShieldCheck,
+        iconBg: 'bg-emerald-500/10 border-emerald-500/20',
+        iconColor: 'text-emerald-400',
+        title: 'Privacy First',
+        desc: 'Zero data logging. Your academic activity is never stored or shared.',
+        visual: null,
+    },
+    {
+        id: 4,
+        size: 'col-span-1 md:col-span-2',
+        icon: Globe,
+        iconBg: 'bg-violet-500/10 border-violet-500/20',
+        iconColor: 'text-violet-400',
+        title: 'Works Everywhere',
+        desc: 'Canvas, Blackboard, Coursera, Google Classroom, Khan Academy and any learning platform.',
+        visual: (
+            <div className="mt-5 flex flex-wrap gap-2">
+                {['Canvas', 'Blackboard', 'Coursera', 'Khan Academy', 'Google Classroom', 'Moodle'].map(name => (
+                    <span key={name} className="px-2.5 py-1 bg-white/4 border border-white/8 rounded-full text-[11px] text-slate-400 font-medium">{name}</span>
+                ))}
+            </div>
+        ),
+    },
+    {
+        id: 5,
+        size: 'col-span-1',
+        icon: TrendingUp,
+        iconBg: 'bg-indigo-500/10 border-indigo-500/20',
+        iconColor: 'text-indigo-400',
+        title: 'Grade Improvement',
+        desc: 'Students report an average grade improvement within 30 days.',
+        visual: (
+            <div className="mt-5">
+                <div className="flex items-end gap-1 h-12">
+                    {[30, 45, 40, 60, 55, 75, 90].map((h, i) => (
+                        <div key={i} className="flex-1 rounded-t-sm" style={{ height: `${h}%`, background: i === 6 ? '#3b82f6' : `rgba(59,130,246,${0.1 + i * 0.1})` }} />
+                    ))}
+                </div>
+            </div>
+        ),
+    },
+    {
+        id: 6,
+        size: 'col-span-1',
+        icon: Sparkles,
+        iconBg: 'bg-sky-500/10 border-sky-500/20',
+        iconColor: 'text-sky-400',
+        title: 'Instant AI Analysis',
+        desc: 'Comprehensive feedback after every question so you understand the why, not just the what.',
+        visual: null,
+    },
+];
 
 export default function Integrations() {
-    const features = [
-        { icon: Zap, text: "Instantly explains concepts overlaid on your screen." },
-        { icon: Check, text: "Provides step-by-step guidance directly inside the study material." },
-        { icon: BookOpen, text: "Works flawlessly on any educational website or study portal." },
-        { icon: GraduationCap, text: "Proven to help students learn faster and improve grades." }
-    ];
-
-    const logos: Array<{ name: string; color: string; bold?: boolean; italic?: boolean; serif?: boolean; circle?: boolean; rounded?: boolean }> = [
-        { name: "Coursera", color: "#0056D2", bold: true },
-        { name: "edX", color: "#02262B", bold: true },
-        { name: "Google Scholar", color: "#4285F4", circle: true },
-        { name: "Khan Academy", color: "#14BF96", rounded: true },
-        { name: "Brilliant", color: "#000000", bold: true },
-        { name: "Wikipedia", color: "#000000", serif: true },
-    ];
-
     return (
-        <section className="bg-slate-50/50 flex flex-col items-center justify-center overflow-hidden border-b border-slate-100 pb-20 pt-16">
+        <section className="py-28 bg-[#060a12] relative">
+            <div className="glow-orb w-[600px] h-[400px] bg-indigo-600/8 top-0 left-1/2 -translate-x-1/2" />
 
-            {/* Logo Marquee Breaker */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.8 }}
-                className="w-full bg-transparent mb-20 relative"
-            >
-                <div className="max-w-7xl mx-auto px-4 text-center mb-8">
-                    <p className="text-sm font-semibold text-slate-500 uppercase tracking-widest">
-                        Join 50,000+ top students learning smarter on
-                    </p>
-                </div>
-
-                {/* Infinite Marquee Container */}
-                <div className="relative flex overflow-x-hidden group mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)">
-                    <div className="py-2 animate-[marquee_30s_linear_infinite] whitespace-nowrap flex items-center gap-12 sm:gap-20 group-hover:[animation-play-state:paused] px-10">
-                        {/* Render logos twice for infinite effect */}
-                        {[...logos, ...logos, ...logos].map((logo, idx) => (
-                            <div key={idx} className="flex items-center justify-center grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                <span className={`text-xl font-bold tracking-tight text-slate-800 flex items-center gap-2 ${logo.serif ? 'font-serif' : ''} ${logo.italic ? 'italic' : ''} ${logo.bold ? 'font-black' : ''}`}>
-                                    {logo.circle && (
-                                        <svg viewBox="0 0 24 24" className="w-6 h-6">
-                                            <circle cx="12" cy="12" r="10" fill={logo.color} opacity="0.9" />
-                                            <circle cx="12" cy="7" r="1.5" fill="white" />
-                                            <circle cx="7" cy="12" r="1.5" fill="white" />
-                                            <circle cx="17" cy="12" r="1.5" fill="white" />
-                                            <circle cx="12" cy="17" r="1.5" fill="white" />
-                                            <circle cx="12" cy="12" r="2" fill="white" />
-                                        </svg>
-                                    )}
-                                    {logo.rounded && (
-                                        <svg viewBox="0 0 24 24" className="w-6 h-6">
-                                            <circle cx="12" cy="12" r="10" fill={logo.color} />
-                                            <path d="M8 12.5C9 11 11 10 12 10s3 1 4 2.5" stroke="white" strokeWidth="2" fill="none" strokeLinecap="round" />
-                                            <circle cx="9.5" cy="9" r="1.2" fill="white" />
-                                            <circle cx="14.5" cy="9" r="1.2" fill="white" />
-                                        </svg>
-                                    )}
-                                    {!logo.circle && !logo.rounded && (
-                                        <span className="text-2xl" style={{ color: logo.color }}>
-                                            {logo.name.charAt(0)}
-                                        </span>
-                                    )}
-                                    {logo.name}
-                                </span>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </motion.div>
-
-            <div className="max-w-6xl mx-auto px-4 w-full relative z-10">
-
-                {/* 2-Column Features Section */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center max-w-5xl mx-auto bg-white rounded-3xl p-8 sm:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-slate-100">
-
-                    {/* Left: Copy & CTA */}
+            <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6">
+                <div className="text-center mb-14">
                     <motion.div
-                        initial={{ opacity: 0, x: -30 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-50px" }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
-                        className="max-w-md mx-auto lg:mx-0 text-center lg:text-left"
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.5 }}
                     >
-                        <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">
-                            Like ChatGPT, but <br />
-                            <span className="text-primary tracking-normal relative inline-block">
-                                built for learning.
-                                <motion.span
-                                    className="absolute -bottom-2 left-0 w-full h-1.5 bg-blue-200 rounded-full z-[-1]"
-                                    initial={{ width: 0 }}
-                                    whileInView={{ width: '100%' }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.8, delay: 0.5, ease: "easeOut" }}
-                                />
-                            </span>
+                        <p className="text-blue-500 text-sm font-semibold tracking-widest uppercase mb-3">Why ExamGhost</p>
+                        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+                            Advanced insights, built for students
                         </h2>
-
-                        <a href="#" className="inline-flex items-center justify-center px-8 py-3.5 bg-primary text-white rounded-xl font-bold text-[15px] hover:bg-blue-600 transition-all shadow-lg shadow-blue-500/30 mb-4 w-full sm:w-auto hover:-translate-y-0.5 hover:shadow-xl hover:shadow-blue-500/40 relative overflow-hidden group">
-                            <span className="relative z-10">Get started for free</span>
-                            <div className="absolute inset-0 bg-white/20 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]" />
-                        </a>
-                        <p className="text-[13px] font-medium text-slate-400">
-                            No credit card &bull; No commitment
+                        <p className="text-slate-500 text-lg max-w-xl mx-auto">
+                            Everything you need to go from confused to confident, powered by AI.
                         </p>
                     </motion.div>
+                </div>
 
-                    {/* Right: Feature Stack */}
-                    <div className="flex flex-col gap-3.5 w-full max-w-lg mx-auto lg:ml-auto">
-                        {features.map((feature, idx) => (
-                            <motion.div
-                                key={idx}
-                                initial={{ opacity: 0, x: 30 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true, margin: "-50px" }}
-                                transition={{ duration: 0.5, delay: 0.2 + (idx * 0.1), ease: "easeOut" }}
-                                className="flex items-center gap-4 p-4 lg:p-5 bg-white border border-slate-100 rounded-2xl shadow-sm hover:shadow-md hover:border-blue-100 hover:-translate-y-0.5 transition-all duration-300 group cursor-pointer"
-                            >
-                                <div className="w-6 h-6 rounded-full bg-blue-50 flex items-center justify-center shrink-0 group-hover:bg-blue-100 group-hover:scale-110 transition-all duration-300">
-                                    <Check className="w-3.5 h-3.5 text-primary" strokeWidth={3} />
-                                </div>
-                                <p className="text-slate-700 font-medium text-[14px] group-hover:text-slate-900 transition-colors">
-                                    {feature.text}
-                                </p>
-                            </motion.div>
-                        ))}
-                    </div>
-
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    {bentoCards.map((card, idx) => (
+                        <motion.div
+                            key={card.id}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: '-50px' }}
+                            transition={{ duration: 0.4, delay: idx * 0.07 }}
+                            className={`${card.size} bg-[#0c1220] border border-white/6 rounded-2xl p-6 card-glow`}
+                        >
+                            <div className={`w-9 h-9 rounded-xl border ${card.iconBg} flex items-center justify-center mb-4`}>
+                                <card.icon className={`w-4.5 h-4.5 ${card.iconColor}`} />
+                            </div>
+                            <h3 className="text-[15px] font-bold text-white mb-2">{card.title}</h3>
+                            <p className="text-[13px] text-slate-500 leading-relaxed">{card.desc}</p>
+                            {card.visual}
+                        </motion.div>
+                    ))}
                 </div>
             </div>
         </section>

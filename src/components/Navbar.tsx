@@ -1,35 +1,55 @@
-import React from 'react';
+'use client';
+import React, { useState, useEffect } from 'react';
 import { Bot } from 'lucide-react';
 import { FaChrome } from 'react-icons/fa';
 
 export default function Navbar() {
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => setScrolled(window.scrollY > 20);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <nav className="fixed top-0 left-0 right-0 h-20 bg-white/80 backdrop-blur-md border-b border-slate-100 z-50 flex items-center">
-            <div className="max-w-7xl mx-auto px-4 w-full flex items-center justify-between">
+        <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? 'bg-[#0a0d16]/90 backdrop-blur-xl border-b border-white/5 shadow-lg shadow-black/30' : 'bg-transparent'}`}>
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
 
                 {/* Logo */}
-                <a href="#" className="flex items-center gap-2 group">
-                    <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-colors">
-                        <Bot className="w-5 h-5" />
+                <a href="/" className="flex items-center gap-2.5 group">
+                    <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center shadow-lg shadow-blue-600/30">
+                        <Bot className="w-4.5 h-4.5 text-white" />
                     </div>
-                    <span className="font-extrabold text-xl tracking-tight text-slate-900">ExamGhost <span className="text-primary italic">AI</span></span>
+                    <span className="font-bold text-[17px] tracking-tight text-white">ExamGhost</span>
                 </a>
 
-                {/* Links */}
-                <div className="hidden md:flex items-center gap-8">
-                    {['Features', 'How It Works', 'Pricing', 'FAQ'].map(link => (
-                        <a key={link} href={`#${link.toLowerCase().replace(/ /g, '-')}`} className="text-sm font-bold text-slate-600 hover:text-primary transition-colors">
-                            {link}
+                {/* Nav Links */}
+                <div className="hidden md:flex items-center gap-7">
+                    {[
+                        { label: 'How It Works', href: '#how-it-works' },
+                        { label: 'Features', href: '#features' },
+                        { label: 'Pricing', href: '#pricing' },
+                        { label: 'FAQ', href: '#faq' },
+                    ].map(({ label, href }) => (
+                        <a
+                            key={label}
+                            href={href}
+                            className="text-[14px] font-medium text-slate-400 hover:text-white transition-colors"
+                        >
+                            {label}
                         </a>
                     ))}
                 </div>
 
                 {/* CTA */}
-                <a href="#" className="flex items-center gap-2 px-5 py-2.5 bg-[#4F71E5] hover:bg-blue-600 text-white text-sm font-bold rounded-xl shadow-md shadow-blue-500/20 transition-all active:scale-95">
-                    <FaChrome className="w-4 h-4" />
-                    <span>Chrome extension</span>
+                <a
+                    href="#"
+                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-[13px] font-semibold rounded-lg transition-all shadow-lg shadow-blue-600/25 active:scale-95"
+                >
+                    <FaChrome className="w-3.5 h-3.5" />
+                    <span>Add to Chrome</span>
                 </a>
-
             </div>
         </nav>
     );
