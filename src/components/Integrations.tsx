@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Target, TrendingUp, Sparkles, ShieldCheck, Clock, Globe } from 'lucide-react';
+import { Target, TrendingUp, Sparkles, ShieldCheck, Clock, Brain, MessageSquare, GraduationCap } from 'lucide-react';
 
 const bentoCards = [
     {
@@ -9,8 +9,8 @@ const bentoCards = [
         icon: Target,
         iconBg: 'bg-amber-500/10 border-amber-500/20',
         iconColor: 'text-amber-400',
-        title: 'Subject Skills Breakdown',
-        desc: 'AI identifies 5–10 key concepts per session and tracks mastery over time.',
+        title: 'Tracks What You Have Learned',
+        desc: 'ExamGhost identifies the key concepts in each study session and monitors your understanding over time, so you always know what to review.',
         visual: (
             <div className="mt-6 space-y-3">
                 {[
@@ -35,8 +35,8 @@ const bentoCards = [
         icon: Clock,
         iconBg: 'bg-blue-500/10 border-blue-500/20',
         iconColor: 'text-blue-400',
-        title: '< 2s Response',
-        desc: 'Answers and explanations delivered in under 2 seconds. Never lose your study flow.',
+        title: 'Instant Explanations',
+        desc: 'Get a clear answer to your study question in under 2 seconds. Your learning flow stays uninterrupted.',
         visual: (
             <div className="mt-6 flex items-center justify-center">
                 <div className="relative w-20 h-20">
@@ -45,7 +45,7 @@ const bentoCards = [
                         <circle cx="40" cy="40" r="32" strokeWidth="8" strokeDasharray="200.96" strokeDashoffset="30" strokeLinecap="round" className="stroke-blue-500 fill-none" />
                     </svg>
                     <div className="absolute inset-0 flex items-center justify-center">
-                        <span className="text-[15px] font-black text-white">1.4s</span>
+                        <span className="text-[14px] font-black text-white">&lt; 2s</span>
                     </div>
                 </div>
             </div>
@@ -58,22 +58,31 @@ const bentoCards = [
         iconBg: 'bg-emerald-500/10 border-emerald-500/20',
         iconColor: 'text-emerald-400',
         title: 'Privacy First',
-        desc: 'Zero data logging. Your academic activity is never stored or shared.',
+        desc: 'Zero data logging. Your study activity is never stored or shared with anyone.',
         visual: null,
     },
     {
         id: 4,
         size: 'col-span-1 md:col-span-2',
-        icon: Globe,
-        iconBg: 'bg-violet-500/10 border-violet-500/20',
-        iconColor: 'text-violet-400',
-        title: 'Works Everywhere',
-        desc: 'Canvas, Blackboard, Coursera, Google Classroom, Khan Academy and any learning platform.',
+        icon: Brain,
+        iconBg: 'bg-blue-500/10 border-blue-500/20',
+        iconColor: 'text-blue-400',
+        title: 'AI That Teaches, Not Just Answers',
+        desc: 'ExamGhost explains the reasoning behind every topic so you truly understand the material and can apply it yourself.',
         visual: (
-            <div className="mt-5 flex flex-wrap gap-2">
-                {['Canvas', 'Blackboard', 'Coursera', 'Khan Academy', 'Google Classroom', 'Moodle'].map(name => (
-                    <span key={name} className="px-2.5 py-1 bg-white/4 border border-white/8 rounded-full text-[11px] text-slate-400 font-medium">{name}</span>
-                ))}
+            <div className="mt-5 flex gap-3">
+                <div className="flex-1 bg-[#080c18] rounded-xl p-3 border border-white/5">
+                    <div className="text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                        <MessageSquare className="w-3 h-3" /> Student
+                    </div>
+                    <div className="text-[12px] text-slate-300">&ldquo;Why does DNA use thymine instead of uracil?&rdquo;</div>
+                </div>
+                <div className="flex-1 bg-blue-600/8 border border-blue-500/15 rounded-xl p-3">
+                    <div className="text-[10px] font-bold text-blue-400 uppercase tracking-wider mb-2 flex items-center gap-1.5">
+                        <Brain className="w-3 h-3" /> AI Tutor
+                    </div>
+                    <div className="text-[11px] text-slate-400 leading-relaxed">Thymine is more stable than uracil because it has an extra methyl group, protecting DNA from mutations over time.</div>
+                </div>
             </div>
         ),
     },
@@ -83,8 +92,8 @@ const bentoCards = [
         icon: TrendingUp,
         iconBg: 'bg-indigo-500/10 border-indigo-500/20',
         iconColor: 'text-indigo-400',
-        title: 'Grade Improvement',
-        desc: 'Students report an average grade improvement within 30 days.',
+        title: 'Grades Improve',
+        desc: 'Students who study with their AI tutor report better test confidence and higher grades.',
         visual: (
             <div className="mt-5">
                 <div className="flex items-end gap-1 h-12">
@@ -92,17 +101,28 @@ const bentoCards = [
                         <div key={i} className="flex-1 rounded-t-sm" style={{ height: `${h}%`, background: i === 6 ? '#3b82f6' : `rgba(59,130,246,${0.1 + i * 0.1})` }} />
                     ))}
                 </div>
+                <div className="text-[10px] text-slate-600 mt-1 text-center">Learning progress over 7 weeks</div>
             </div>
         ),
     },
     {
         id: 6,
         size: 'col-span-1',
-        icon: Sparkles,
+        icon: GraduationCap,
         iconBg: 'bg-sky-500/10 border-sky-500/20',
         iconColor: 'text-sky-400',
-        title: 'Instant AI Analysis',
-        desc: 'Comprehensive feedback after every question so you understand the why, not just the what.',
+        title: 'Works for All Learners',
+        desc: 'Whether you are in high school, university, or self-studying — ExamGhost adapts its teaching style to you.',
+        visual: null,
+    },
+    {
+        id: 7,
+        size: 'col-span-1',
+        icon: Sparkles,
+        iconBg: 'bg-violet-500/10 border-violet-500/20',
+        iconColor: 'text-violet-400',
+        title: 'Practice Quiz Generator',
+        desc: 'Generate unlimited self-practice quizzes on any topic you are studying to test your own understanding.',
         visual: null,
     },
 ];
@@ -122,10 +142,11 @@ export default function Integrations() {
                     >
                         <p className="text-blue-500 text-sm font-semibold tracking-widest uppercase mb-3">Why ExamGhost</p>
                         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-                            Advanced insights, built for students
+                            Built for students who want to<br/>
+                            <span className="gradient-text">actually understand</span>
                         </h2>
                         <p className="text-slate-500 text-lg max-w-xl mx-auto">
-                            Everything you need to go from confused to confident, powered by AI.
+                            ExamGhost is your AI Tutor, AI Quiz Helper, and AI Teacher — all in one Chrome extension. Free to start.
                         </p>
                     </motion.div>
                 </div>
@@ -141,7 +162,7 @@ export default function Integrations() {
                             className={`${card.size} bg-[#0c1220] border border-white/6 rounded-2xl p-6 card-glow`}
                         >
                             <div className={`w-9 h-9 rounded-xl border ${card.iconBg} flex items-center justify-center mb-4`}>
-                                <card.icon className={`w-4.5 h-4.5 ${card.iconColor}`} />
+                                <card.icon className={`w-4 h-4 ${card.iconColor}`} />
                             </div>
                             <h3 className="text-[15px] font-bold text-white mb-2">{card.title}</h3>
                             <p className="text-[13px] text-slate-500 leading-relaxed">{card.desc}</p>

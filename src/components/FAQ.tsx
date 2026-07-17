@@ -5,36 +5,36 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
     {
-        q: 'What exactly does ExamGhost do?',
-        a: 'ExamGhost is an AI-powered Chrome extension that acts as your personal tutor while you study. When you highlight text or ask a question on any webpage, it instantly provides clear, step-by-step explanations to help you understand the material — not just memorize answers.'
+        q: 'What exactly is ExamGhost?',
+        a: 'ExamGhost is an AI Tutor, AI Quiz Helper, and AI Teacher — all built into one Chrome extension. It helps you understand topics you are studying by giving you clear explanations, answering your questions in simple language, and creating practice quizzes so you can test your own knowledge.'
     },
     {
-        q: 'What types of questions can ExamGhost help with?',
-        a: 'ExamGhost supports multiple choice, true/false, short answer, fill-in-the-blank, and complex multi-part questions. It handles Math, Science, History, Literature, and 50+ languages — making it a universal study companion.'
+        q: 'Does ExamGhost help with cheating or exams?',
+        a: 'No — ExamGhost is a learning and tutoring tool, not a cheating tool. It is designed to help you understand subjects better through explanations and self-practice. Think of it like having a personal tutor available 24/7 who explains concepts to you and creates practice exercises — it helps you learn, not cheat.'
     },
     {
-        q: 'Is ExamGhost allowed by educational institutions?',
-        a: 'ExamGhost is a legitimate AI study tool similar to tutoring services. It helps students understand and learn material rather than providing cheating tools. Like a calculator or a textbook, how it\'s used determines its academic appropriateness. We encourage responsible use for learning and genuine comprehension.'
+        q: 'How is ExamGhost different from a search engine?',
+        a: 'Search engines give you links and raw information. ExamGhost acts as your personal AI teacher — it explains topics in simple language at your level, answers follow-up questions like a real tutor, and creates personalized practice quizzes to help you retain what you have learned.'
     },
     {
-        q: 'How does skill tracking work?',
-        a: 'After each study session, ExamGhost analyzes your performance and identifies 5–10 key concepts you studied. It tracks your mastery over time, showing you exactly where you\'re improving and which areas need more focus. This helps you study efficiently instead of revisiting what you already know.'
+        q: 'What subjects can ExamGhost help me study?',
+        a: 'ExamGhost covers a wide range of subjects including Mathematics, Science (Physics, Chemistry, Biology), History, Literature, Economics, Computer Science, and many more. It also supports 50+ languages, making it a great study companion for learners worldwide.'
     },
     {
-        q: 'What platforms does ExamGhost work on?',
-        a: 'ExamGhost works on any webpage in Chrome, including Canvas, Blackboard, Coursera, Khan Academy, Google Classroom, Moodle, and any online learning portal. If you can view it in Chrome, ExamGhost can help you understand it.'
+        q: 'How do the AI-generated practice quizzes work?',
+        a: 'Simply tell ExamGhost what topic you are studying and it will generate practice questions at your level. After you answer each question, it explains why the correct answer is right — so you learn the concept, not just the answer. All quizzes are for self-practice only.'
+    },
+    {
+        q: 'Does ExamGhost track my learning progress?',
+        a: 'Yes! ExamGhost tracks which topics you have studied and how well you understand each one. It shows you a visual progress dashboard and suggests what to review next based on your current knowledge gaps — helping you study efficiently and intelligently.'
+    },
+    {
+        q: 'Is my personal data safe?',
+        a: 'Absolutely. ExamGhost takes your privacy very seriously. We do not log, store, or share your study sessions or personal information. Everything is processed securely and your data is never tied to your identity.'
     },
     {
         q: 'Can I cancel my subscription anytime?',
-        a: 'Absolutely. You can cancel at any time with no questions asked. Your access continues until the end of your current billing period. All paid plans also include a 7-day money-back guarantee.'
-    },
-    {
-        q: 'Is my data private and secure?',
-        a: 'Yes. We take privacy extremely seriously. ExamGhost does not log, store, or share your academic activity or personal data. Your sessions are processed securely and never tied to your identity.'
-    },
-    {
-        q: 'Does ExamGhost work in my language?',
-        a: 'Yes! ExamGhost supports 50+ languages. Whether you\'re studying in English, Spanish, French, German, Mandarin, or any other major language, our AI can understand and explain content accurately.'
+        a: 'Yes. You can cancel at any time, no questions asked. Your access continues until the end of your current billing period. All paid plans also come with a 7-day money-back guarantee so you can try it risk-free.'
     },
 ];
 
@@ -51,7 +51,7 @@ export default function FAQ() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
                     >
-                        <p className="text-blue-500 text-sm font-semibold tracking-widest uppercase mb-3">Support</p>
+                        <p className="text-blue-500 text-sm font-semibold tracking-widest uppercase mb-3">FAQ</p>
                         <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
                             Frequently asked questions
                         </h2>
@@ -77,7 +77,7 @@ export default function FAQ() {
                         >
                             <button
                                 onClick={() => setOpenIndex(openIndex === idx ? null : idx)}
-                                className="w-full px-6 py-4.5 flex items-center justify-between text-left gap-4 focus:outline-none"
+                                className="w-full px-6 py-4 flex items-center justify-between text-left gap-4 focus:outline-none"
                             >
                                 <span className={`text-[14px] font-semibold transition-colors ${openIndex === idx ? 'text-white' : 'text-slate-300'}`}>
                                     {faq.q}
@@ -103,7 +103,6 @@ export default function FAQ() {
                     ))}
                 </div>
 
-                {/* Contact prompt */}
                 <div className="mt-10 text-center text-[14px] text-slate-500">
                     Still have questions?{' '}
                     <a href="/contact" className="text-blue-400 hover:text-blue-300 font-semibold underline underline-offset-2 transition-colors">
