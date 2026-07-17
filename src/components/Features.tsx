@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef } from 'react';
-import { EyeOff, Check, Scan, Shield, Lock, Key, Maximize } from 'lucide-react';
+import { BookOpen, Check, Brain, GraduationCap, Library, Lightbulb, Maximize } from 'lucide-react';
 import { SiDiscord } from 'react-icons/si';
 import { motion, useMotionTemplate, useMotionValue } from 'framer-motion';
 
@@ -130,7 +130,7 @@ export default function Features() {
                                 whileHover={{ scale: 1.1, rotate: 5 }}
                                 className="w-12 h-12 bg-white rounded-xl flex items-center justify-center shadow-sm border border-slate-100/80 transition-shadow"
                             >
-                                <EyeOff className="w-5 h-5 text-slate-600 group-hover:text-blue-500 transition-colors" />
+                                <BookOpen className="w-5 h-5 text-slate-600 group-hover:text-blue-500 transition-colors" />
                             </motion.div>
                         </div>
                         <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-snug">Non-Intrusive Design</h3>
@@ -172,25 +172,25 @@ export default function Features() {
                                 <h3 className="text-xl font-bold text-slate-900 mb-2 tracking-snug">Intelligent Context Engine</h3>
                                 <p className="text-[15px] text-slate-500 max-w-sm">Our AI engine scans and understands the context of your questions instantly to provide the best hints. <span className="hidden sm:inline italic text-slate-400 text-xs ml-1">(Hover to simulate scanner)</span></p>
                             </div>
-                            <div className="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-50/80 rounded-full border border-emerald-100/50 relative z-20">
-                                <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full anim-pulse-glow text-emerald-500" />
-                                <span className="text-[10px] font-bold text-emerald-700 tracking-widest uppercase">Analyzing</span>
+                            <div className="flex items-center gap-1.5 px-3 py-1.5 bg-blue-50/80 rounded-full border border-blue-100/50 relative z-20">
+                                <div className="w-1.5 h-1.5 bg-blue-500 rounded-full anim-pulse-glow text-blue-500" />
+                                <span className="text-[10px] font-bold text-blue-700 tracking-widest uppercase">Analyzing</span>
                             </div>
                         </div>
 
                         {/* Premium 360 Radar sweep anchored to bottom right */}
                         <div className="absolute right-[-30px] bottom-[-30px] pointer-events-none z-10 hidden sm:flex items-center justify-end">
                             {/* Radar Screen Base */}
-                            <div className="relative w-[320px] h-[320px] rounded-full border border-emerald-500/20 bg-emerald-500/5 shadow-[inset_0_0_50px_rgba(16,185,129,0.08)] flex items-center justify-center overflow-hidden mix-blend-multiply">
+                            <div className="relative w-[320px] h-[320px] rounded-full border border-blue-500/20 bg-blue-500/5 shadow-[inset_0_0_50px_rgba(59,130,246,0.08)] flex items-center justify-center overflow-hidden mix-blend-multiply">
 
                                 {/* Concentric Grid Rings */}
-                                <div className="absolute w-[240px] h-[240px] rounded-full border border-emerald-500/10" />
-                                <div className="absolute w-[160px] h-[160px] rounded-full border border-emerald-500/15" />
-                                <div className="absolute w-[80px] h-[80px] rounded-full border border-emerald-500/20" />
+                                <div className="absolute w-[240px] h-[240px] rounded-full border border-blue-500/10" />
+                                <div className="absolute w-[160px] h-[160px] rounded-full border border-blue-500/15" />
+                                <div className="absolute w-[80px] h-[80px] rounded-full border border-blue-500/20" />
 
                                 {/* Crosshairs */}
-                                <div className="absolute w-full h-[1px] bg-emerald-500/20" />
-                                <div className="absolute h-full w-[1px] bg-emerald-500/20" />
+                                <div className="absolute w-full h-[1px] bg-blue-500/20" />
+                                <div className="absolute h-full w-[1px] bg-blue-500/20" />
 
                                 {/* 360 Sweeping Light Beam */}
                                 <motion.div
@@ -198,19 +198,19 @@ export default function Features() {
                                     transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
                                     className="absolute w-full h-full rounded-full origin-center"
                                     style={{
-                                        background: 'conic-gradient(from 0deg, transparent 75%, rgba(16, 185, 129, 0.05) 85%, rgba(16, 185, 129, 0.4) 100%)'
+                                        background: 'conic-gradient(from 0deg, transparent 75%, rgba(59, 130, 246, 0.05) 85%, rgba(59, 130, 246, 0.4) 100%)'
                                     }}
                                 >
                                     {/* Leading Edge Solid Line */}
-                                    <div className="absolute top-0 right-1/2 w-[2px] h-1/2 bg-emerald-400 shadow-[0_0_12px_rgba(16,185,129,0.8)]" />
+                                    <div className="absolute top-0 right-1/2 w-[2px] h-1/2 bg-blue-400 shadow-[0_0_12px_rgba(59,130,246,0.8)]" />
                                 </motion.div>
 
                                 {/* Radar Core/Transmitter */}
-                                <div className="absolute w-2.5 h-2.5 rounded-full bg-emerald-500 shadow-[0_0_15px_rgba(16,185,129,1)] anim-pulse-glow" />
+                                <div className="absolute w-2.5 h-2.5 rounded-full bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,1)] anim-pulse-glow" />
                             </div>
                         </div>
 
-                        {/* Interactive "Threat/Missile" Target Tracked by Mouse */}
+                        {/* Interactive Target Tracked by Mouse */}
                         <motion.div
                             className="absolute w-12 h-12 pointer-events-none z-20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                             style={{
@@ -218,29 +218,29 @@ export default function Features() {
                                 y: useMotionTemplate`calc(${mouseY}px - 24px)`,
                             }}
                         >
-                            {/* Outer pulsing threat ring */}
-                            <div className="absolute w-full h-full border-2 border-rose-500 rounded-full anim-target-ping" />
+                            {/* Outer pulsing ring */}
+                            <div className="absolute w-full h-full border-2 border-amber-500 rounded-full anim-target-ping" />
 
                             {/* Inner Target */}
                             <div className="relative w-4 h-4 flex items-center justify-center">
                                 {/* Core dot */}
-                                <div className="w-2.5 h-2.5 bg-rose-500 rounded-full shadow-[0_0_10px_rgba(244,63,94,0.8)] z-10" />
+                                <div className="w-2.5 h-2.5 bg-amber-500 rounded-full shadow-[0_0_10px_rgba(245,158,11,0.8)] z-10" />
                                 {/* Crosshairs around target */}
-                                <div className="absolute w-8 h-[1px] bg-rose-500/70" />
-                                <div className="absolute h-8 w-[1px] bg-rose-500/70" />
+                                <div className="absolute w-8 h-[1px] bg-amber-500/70" />
+                                <div className="absolute h-8 w-[1px] bg-amber-500/70" />
                                 {/* Rotating target lock */}
                                 <motion.div
                                     animate={{ rotate: -360 }}
                                     transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
-                                    className="absolute w-10 h-10 border-[1.5px] border-rose-500/50 rounded-full border-t-transparent border-l-transparent"
+                                    className="absolute w-10 h-10 border-[1.5px] border-amber-500/50 rounded-full border-t-transparent border-l-transparent"
                                 />
                             </div>
 
                             {/* Status Label (Simulated) */}
                             <div className="absolute top-full mt-2 left-1/2 -translate-x-1/2 flex items-center justify-center min-w-max">
-                                <span className="bg-rose-500 text-white text-[9px] font-mono px-1.5 py-0.5 rounded flex items-center gap-1 shadow-[0_0_10px_rgba(244,63,94,0.4)]">
+                                <span className="bg-amber-500 text-white text-[9px] font-mono px-1.5 py-0.5 rounded flex items-center gap-1 shadow-[0_0_10px_rgba(245,158,11,0.4)]">
                                     <div className="w-1 h-1 bg-white rounded-full anim-pulse-glow" />
-                                    TRACKING
+                                    ANALYZING
                                 </span>
                             </div>
                         </motion.div>
@@ -358,7 +358,7 @@ export default function Features() {
 
                                         {/* State 1: Extracting Badge (animates out when radar ripples) */}
                                         <div className="absolute left-[130px] sm:left-[170px] top-1/2 px-2.5 py-1 bg-[#1C1C28]/90 backdrop-blur border border-slate-600/50 rounded-md shadow-lg flex items-center gap-2 anim-badge-pop z-30 pointer-events-none">
-                                            <Scan className="w-3 h-3 text-slate-400" />
+                                            <Brain className="w-3 h-3 text-slate-400" />
                                             <span className="text-[9px] font-bold text-slate-400 tracking-widest uppercase">Detecting</span>
                                         </div>
 
@@ -397,21 +397,21 @@ export default function Features() {
                                 whileHover={{ scale: 1.1 }}
                                 className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center shadow-sm border border-slate-100 transition-colors duration-300"
                             >
-                                <Shield className="w-6 h-6 text-slate-700 transition-colors duration-300" />
+                                <GraduationCap className="w-6 h-6 text-slate-700 transition-colors duration-300" />
                             </motion.div>
                         </div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-snug">Enterprise Encryption</h3>
+                        <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-snug">Academic Integrity</h3>
                         <p className="text-[15px] text-slate-500 leading-relaxed mb-8">
-                            All data transmission is secured with AES-256 encryption. We utilize a strict zero-logging policy.
+                            Our platform respects academic boundaries. We provide guidance without compromising your institution's honor code.
                         </p>
 
                         <div className="mt-auto flex items-center justify-between p-3.5 bg-slate-50/50 rounded-xl transition-colors">
                             <div className="flex gap-2.5">
-                                <Lock className="w-4 h-4 text-slate-400" />
-                                <Key className="w-4 h-4 text-slate-400" />
+                                <Library className="w-4 h-4 text-slate-400" />
+                                <Lightbulb className="w-4 h-4 text-slate-400" />
                             </div>
                             <span className="text-[11px] font-bold text-slate-700 tracking-widest bg-white px-2.5 py-1 flex items-center shadow-sm rounded border border-slate-100 uppercase">
-                                AES-256
+                                HONOR CODE
                             </span>
                         </div>
                     </motion.div>

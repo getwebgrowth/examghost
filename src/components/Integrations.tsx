@@ -1,23 +1,23 @@
 'use client';
 import React from 'react';
-import { Check, Shield, Zap, Eye } from 'lucide-react';
+import { Check, BookOpen, Zap, GraduationCap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function Integrations() {
     const features = [
         { icon: Zap, text: "Instantly explains concepts overlaid on your screen." },
         { icon: Check, text: "Provides step-by-step guidance directly inside the study material." },
-        { icon: Shield, text: "Works flawlessly on Canvas, Blackboard, and McGraw Hill." },
-        { icon: Eye, text: "Proven to help students learn faster and improve grades." }
+        { icon: BookOpen, text: "Works flawlessly on any educational website or study portal." },
+        { icon: GraduationCap, text: "Proven to help students learn faster and improve grades." }
     ];
 
     const logos = [
-        { name: "Canvas", color: "#E74C3C", circle: true },
-        { name: "Blackboard", color: "#262626", bold: true },
-        { name: "D2L Brightspace", color: "#F47C20", italic: true },
-        { name: "McGraw Hill", color: "#004B87", serif: true },
-        { name: "Schoology", color: "#58A946", rounded: true },
-        { name: "Moodle", color: "#F98012", bold: true },
+        { name: "Coursera", color: "#0056D2", bold: true },
+        { name: "edX", color: "#02262B", bold: true },
+        { name: "Google Scholar", color: "#4285F4", circle: true },
+        { name: "Khan Academy", color: "#14BF96", rounded: true },
+        { name: "Brilliant", color: "#000000", bold: true },
+        { name: "Wikipedia", color: "#000000", serif: true },
     ];
 
     return (

@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { Command, CheckCircle2, Bot, Sparkles, ChevronDown, Crosshair, ShieldCheck, Zap } from 'lucide-react';
+import { Command, CheckCircle2, Bot, Sparkles, ChevronDown, BookOpen, Brain, Zap } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export default function GhostMode() {
@@ -44,7 +44,7 @@ export default function GhostMode() {
         {
             title: "Study safely and seamlessly.",
             description: "ExamGhost takes a secure snapshot of your screen. It precisely extracts the question to provide step-by-step guidance without disrupting your workflow. You stay focused while the AI tutor assists you.",
-            icon: ShieldCheck,
+            icon: BookOpen,
             visual: (
                 <div className="w-full h-full bg-[#f8fafc] flex items-center justify-center relative overflow-hidden">
                     <div className="absolute inset-0" style={{ backgroundImage: 'radial-gradient(circle at 1px 1px, #e2e8f0 1px, transparent 0)', backgroundSize: '24px 24px' }} />
@@ -72,8 +72,8 @@ export default function GhostMode() {
 
                         {/* Status Pill */}
                         <div className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-white rounded-full shadow-[0_2px_10px_rgb(0,0,0,0.06)] border border-slate-100 flex items-center justify-center gap-1.5 z-20">
-                            <Crosshair className="w-3 h-3 text-[#2563eb] animate-spin-slow" />
-                            <span className="text-[9px] font-black text-[#2563eb] uppercase tracking-wider">SCANNING</span>
+                            <Brain className="w-3 h-3 text-[#2563eb] animate-spin-slow" />
+                            <span className="text-[9px] font-black text-[#2563eb] uppercase tracking-wider">ANALYZING</span>
                         </div>
                     </div>
                 </div>

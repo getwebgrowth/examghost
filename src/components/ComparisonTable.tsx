@@ -4,8 +4,8 @@ import { CheckCircle2, XCircle, AlertTriangle } from 'lucide-react';
 
 export default function ComparisonTable() {
     const tableRows = [
-        { feature: "Shadow DOM Stealth", examghost: true, cheatmate: false, quietly: false, testbro: false },
-        { feature: "100% Canvas Focus Immunity", examghost: true, cheatmate: 'warn', quietly: false, testbro: 'warn' },
+        { feature: "Seamless Context Engine", examghost: true, cheatmate: false, quietly: false, testbro: false },
+        { feature: "Distraction-Free Focus", examghost: true, cheatmate: 'warn', quietly: false, testbro: 'warn' },
         { feature: "Off-screen Rendering", examghost: true, cheatmate: false, quietly: false, testbro: false },
         { feature: "Graph Analysis", examghost: true, cheatmate: true, quietly: false, testbro: false },
     ];
