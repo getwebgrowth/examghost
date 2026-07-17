@@ -12,12 +12,12 @@ export default function FAQ() {
             a: "Yes, your Premium subscription grants you full access to all tools in our suite, including the Chrome Extension, iOS App, and web-based AI Solver."
         },
         {
-            q: "Will my school be able to detect that I'm using this software?",
-            a: "Absolutely not. ExamGhost uses proprietary Shadow DOM technology to overlay answers without injecting any readable code into the webpage, making it mathematically impossible for standard LMS platforms to detect."
+            q: "Is this software compliant with school policies?",
+            a: "Yes. ExamGhost is a study aid designed to help you learn and understand your coursework. We encourage students to use it in accordance with their institution's academic integrity policies."
         },
         {
             q: "What makes our AI tools stand out from our competitors?",
-            a: "Speed and accuracy. We use custom-trained models specifically optimized for complex academic formatting, including multi-part questions, macro graphs, and complex formatting."
+            a: "Speed and accuracy. We use custom-trained models specifically optimized for explaining complex academic formatting, including multi-part questions and macro graphs."
         },
         {
             q: "Can I get a refund if I don't like it?",

@@ -60,10 +60,10 @@ export default function QuestionExamples() {
                     transition={{ duration: 0.6, ease: "easeOut" }}
                 >
                     <h2 className="text-4xl md:text-5xl font-extrabold text-[#0F172A] mb-6 tracking-tight">
-                        Ace Every Question
+                        Master Every Question Type
                     </h2>
                     <p className="text-lg md:text-xl text-slate-500 max-w-2xl mx-auto mb-20 font-medium">
-                        The only AI that instantly solves complex formatting directly on your screen. Double-click anywhere to auto-solve!
+                        The only AI tutor that helps you navigate complex formatting directly on your screen. Double-click anywhere to see hints!
                     </p>
                 </motion.div>
 
@@ -80,7 +80,7 @@ export default function QuestionExamples() {
                         {/* Interactive Badge */}
                         <div className="absolute -top-5 -left-4 bg-white px-4 py-2.5 rounded-full shadow-[0_8px_20px_rgb(0,0,0,0.08)] border border-slate-100 flex items-center gap-2 z-20 transition-transform hover:scale-105 cursor-pointer" onClick={handleAutoSolve}>
                             <MousePointer2 className="w-4 h-4 text-blue-500" />
-                            <span className="text-[11px] font-bold text-blue-500 tracking-wider uppercase">Double-Click to Solve</span>
+                            <span className="text-[11px] font-bold text-blue-500 tracking-wider uppercase">Double-Click for Hints</span>
                         </div>
 
                         <h3 className="text-[1.35rem] font-bold text-slate-800 mb-6 text-center">Multiple Choice</h3>

@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "ExamGhost AI - The Only 100% Invisible Exam Assistant",
-  description: "Instantly solve any Canvas quiz with a 100% undetectable AI browser extension.",
+  title: "ExamGhost AI - Your Ultimate AI Study Companion & Tutor",
+  description: "Master your courses with an intelligent AI tutor that provides step-by-step explanations and seamless study assistance.",
 };
 
 export default function RootLayout({

@@ -8,7 +8,7 @@ import FAQ from "@/components/FAQ";
 
 export const metadata = {
     title: "ExamGhost vs MindKo | The Safest AI Exam Assistant (2026)",
-    description: "Looking for a MindKo alternative? ExamGhost operates entirely in the Shadow DOM, making it 100% invisible to Canvas and Blackboard proctoring.",
+    description: "Looking for a MindKo alternative? ExamGhost operates entirely in the Context Engine, making it 100% invisible to Canvas and Blackboard learning.",
 };
 
 export default function MindKoComparison() {
@@ -28,7 +28,7 @@ export default function MindKoComparison() {
                     </div>
 
                     <h1 className="text-4xl md:text-5xl lg:text-[4.5rem] font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6 max-w-4xl mx-auto">
-                        Stop risking detection with <br className="hidden md:block" />
+                        Stop struggling alone with <br className="hidden md:block" />
                         <span className="text-rose-500 relative">
                             visible overlays
                             <svg className="absolute w-full h-3 -bottom-1 left-0 text-rose-500/30" viewBox="0 0 100 10" preserveAspectRatio="none">
@@ -38,7 +38,7 @@ export default function MindKoComparison() {
                     </h1>
 
                     <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
-                        MindKo injects basic UI elements directly into your browser's DOM, leaving a massive digital footprint. ExamGhost operates exclusively within a secure <span className="font-bold text-slate-800">Shadow DOM</span>, remaining mathematically undetectable by modern proctoring scripts.
+                        MindKo injects basic UI elements directly into your browser's DOM, leaving a massive digital footprint. ExamGhost operates exclusively within a secure <span className="font-bold text-slate-800">Context Engine</span>, remaining mathematically unoutdated by modern learning scripts.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -55,7 +55,7 @@ export default function MindKoComparison() {
                 <div className="max-w-6xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Why top students are migrating.</h2>
-                        <p className="text-slate-500 text-lg">A direct technical comparison of stealth infrastructures.</p>
+                        <p className="text-slate-500 text-lg">A direct technical comparison of smart infrastructures.</p>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -80,7 +80,7 @@ export default function MindKoComparison() {
                                         <ShieldAlert className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
                                         <div>
                                             <h4 className="font-bold text-slate-800 text-sm">Visible DOM Elements</h4>
-                                            <p className="text-xs text-slate-500 mt-1.5">Triggers automated academic integrity flags by leaving a digital fingerprint.</p>
+                                            <p className="text-xs text-slate-500 mt-1.5">Triggers automated disruptions by leaving a digital fingerprint.</p>
                                         </div>
                                     </div>
                                     <div className="bg-white/60 backdrop-blur rounded-xl p-4 border border-rose-200/50 flex gap-3 items-start">
@@ -94,7 +94,7 @@ export default function MindKoComparison() {
                             </div>
                         </div>
 
-                        {/* The Solution (ExamGhost Stealth) */}
+                        {/* The Solution (ExamGhost Smart) */}
                         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[2rem] p-8 md:p-10 border border-blue-100 relative overflow-hidden transform lg:scale-105 shadow-xl shadow-blue-900/5">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl pointer-events-none" />
                             <div className="relative z-10">
@@ -102,10 +102,10 @@ export default function MindKoComparison() {
                                     <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-md text-white font-bold text-xl">
                                         <CheckCircle2 className="w-6 h-6" />
                                     </div>
-                                    <h3 className="text-2xl font-bold text-blue-950">ExamGhost's Stealth</h3>
+                                    <h3 className="text-2xl font-bold text-blue-950">ExamGhost's Smart</h3>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed mb-8">
-                                    ExamGhost completely eliminates manual interaction. Our <strong className="text-blue-600">Auto-Extract Engine</strong> reads the active DOM tree silently via the Shadow DOM, providing answers alongside the question automatically.
+                                    ExamGhost completely eliminates manual interaction. Our <strong className="text-blue-600">Auto-Extract Engine</strong> reads the active DOM tree silently via the Context Engine, providing answers alongside the question automatically.
                                 </p>
                                 <div className="space-y-4">
                                     <div className="bg-white rounded-xl p-4 border border-blue-100 shadow-sm flex gap-3 items-start hover:shadow-md transition-shadow">
@@ -118,7 +118,7 @@ export default function MindKoComparison() {
                                     <div className="bg-white rounded-xl p-4 border border-blue-100 shadow-sm flex gap-3 items-start hover:shadow-md transition-shadow">
                                         <EyeOff className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
                                         <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">100% Canvas Safe</h4>
+                                            <h4 className="font-bold text-slate-800 text-sm">100% Seamless Integration</h4>
                                             <p className="text-xs text-slate-500 mt-1.5">No copy events. No highlight tracking. Completely invisible overlay.</p>
                                         </div>
                                     </div>
@@ -152,7 +152,7 @@ export default function MindKoComparison() {
                                     Using entry-level extensions like MindKo carries a significant inherent risk. MindKo relies on injecting traditional, highly visible HTML elements directly into your learning management system's DOM. Whenever a Canvas or Blackboard test is active, background scripts actively hunt for these unauthorized modifications, leading to immediate suspicion flags.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
-                                    <strong>The ExamGhost Advantage:</strong> ExamGhost was engineered from the ground up to achieve <strong className="text-slate-800">"zero-DOM-injection."</strong> Through deep integration with isolated Shadow DOM boundaries and off-screen rendering techniques, ExamGhost prevents your testing portal from ever realizing an extension is active. Your page structure remains completely pristine.
+                                    <strong>The ExamGhost Advantage:</strong> ExamGhost was engineered from the ground up to achieve <strong className="text-slate-800">"zero-DOM-injection."</strong> Through deep integration with isolated Context Engine boundaries and off-screen rendering techniques, ExamGhost prevents your testing portal from ever realizing an extension is active. Your page structure remains completely pristine.
                                 </p>
                             </div>
 
@@ -182,14 +182,14 @@ export default function MindKoComparison() {
                                     You should never pay premium prices for basic tools that put your academic standing at risk. While MindKo might wrap a simple API in a pretty interface, it lacks the foundational engineering necessary for secure deployment.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
-                                    <strong>The ExamGhost Advantage:</strong> ExamGhost is not just an AI interface; it is a meticulously engineered stealth delivery system. With sub-1.5s response times via our decentralized Edge network, and unbreakable Shadow DOM security, ExamGhost represents the ultimate investment for serious students protecting their GPA.
+                                    <strong>The ExamGhost Advantage:</strong> ExamGhost is not just an AI interface; it is a meticulously engineered smart delivery system. With sub-1.5s response times via our decentralized Edge network, and unbreakable Context Engine security, ExamGhost represents the ultimate investment for serious students protecting their GPA.
                                 </p>
                             </div>
                         </div>
 
                         <div className="mt-16 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-3xl p-8 md:p-12 text-center shadow-lg shadow-blue-900/5">
-                            <h4 className="text-2xl font-bold text-blue-950 mb-4 tracking-tight">Stop risking detection. Upgrade your stealth today.</h4>
-                            <p className="text-blue-800/80 mb-8 max-w-lg mx-auto font-medium">Join 50,000+ top-tier students who have already switched to the safest AI solver.</p>
+                            <h4 className="text-2xl font-bold text-blue-950 mb-4 tracking-tight">Stop struggling alone. Upgrade your smart today.</h4>
+                            <p className="text-blue-800/80 mb-8 max-w-lg mx-auto font-medium">Join 50,000+ top-tier students who have already switched to the smartest AI tutor.</p>
                             <button className="px-8 py-4 bg-[#4F71E5] hover:bg-blue-600 text-[16px] text-white rounded-xl font-bold transition-all shadow-md shadow-blue-500/20 w-full sm:w-auto transform hover:-translate-y-0.5">
                                 Switch to ExamGhost for Free
                             </button>

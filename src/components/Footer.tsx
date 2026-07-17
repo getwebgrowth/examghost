@@ -33,8 +33,8 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    <h2 className="text-3xl md:text-[2.75rem] leading-tight font-bold text-white mb-4 tracking-tight">Ready to fast-track your homework?</h2>
-                    <p className="text-blue-100 text-[17px] mb-10 font-medium">Save hours on homework and never worry about exams ever again.</p>
+                    <h2 className="text-3xl md:text-[2.75rem] leading-tight font-bold text-white mb-4 tracking-tight">Ready to master your coursework?</h2>
+                    <p className="text-blue-100 text-[17px] mb-10 font-medium">Save hours on studying and master your subjects with an AI tutor.</p>
 
                     <button className="bg-white text-slate-900 font-bold px-10 py-4 text-[15px] rounded-xl hover:scale-105 transition-transform shadow-xl shadow-black/10 hover:shadow-black/20">
                         Get started - Its free
@@ -58,7 +58,7 @@ export default function Footer() {
                             <span className="font-extrabold text-xl tracking-tight text-slate-800">ExamGhost</span>
                         </a>
                         <p className="text-slate-500 text-[14px] font-medium mb-6 leading-relaxed">
-                            Instant, Expert Homework Help.
+                            Instant, Expert Study Companion.
                         </p>
                         <button className="w-full flex items-center justify-center gap-2.5 px-6 py-3.5 bg-[#4F71E5] hover:bg-blue-600 text-white rounded-xl font-bold transition-all shadow-md mb-8">
                             <FaChrome className="w-[18px] h-[18px]" />
@@ -82,6 +82,22 @@ export default function Footer() {
                             <ul className="space-y-3.5">
                                 <li>
                                     <a href="/" className="text-slate-500 hover:text-[#3b82f6] transition-colors font-medium">Home</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        {/* Column: Legal */}
+                        <div>
+                            <h4 className="font-bold text-slate-800 mb-5 tracking-tight text-[14px]">Legal</h4>
+                            <ul className="space-y-3.5">
+                                <li>
+                                    <a href="/privacy" className="text-slate-500 hover:text-[#3b82f6] transition-colors font-medium">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="/terms" className="text-slate-500 hover:text-[#3b82f6] transition-colors font-medium">Terms of Service</a>
+                                </li>
+                                <li>
+                                    <a href="/contact" className="text-slate-500 hover:text-[#3b82f6] transition-colors font-medium">Contact Us</a>
                                 </li>
                             </ul>
                         </div>

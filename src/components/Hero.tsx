@@ -79,9 +79,9 @@ export default function Hero() {
                 {/* Text Content */}
                 <div className="text-center max-w-4xl mx-auto mb-16 relative z-30">
                     <h1 className="text-4xl sm:text-6xl md:text-[4.5rem] font-extrabold tracking-tight text-slate-900 mb-6 leading-[1.1]">
-                        Ace your exams & homework <br className="hidden md:block" />
+                        Master your studies & homework <br className="hidden md:block" />
                         <span className="text-primary italic relative">
-                            invisibly
+                            effortlessly
                             <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 8" fill="none">
                                 <path d="M2 6c30-4 60-4 90-2s70 2 106-2" stroke="currentColor" strokeWidth="3" strokeLinecap="round" className="text-primary/30" />
                             </svg>
@@ -89,15 +89,15 @@ export default function Hero() {
                     </h1>
 
                     <p className="text-lg sm:text-xl text-slate-600 mb-10 max-w-2xl mx-auto font-medium">
-                        The only 100% undetectable AI extension. Get instant, accurate solutions overlaid directly on your screen.
+                        The ultimate AI study companion. Get instant, accurate explanations and step-by-step guidance overlaid directly on your screen.
                     </p>
 
                     {/* Feature pills */}
                     <div className="flex flex-wrap justify-center gap-3 mb-10">
                         {[
-                            { icon: Shield, text: "100% Undetectable" },
+                            { icon: Shield, text: "Privacy First" },
                             { icon: Zap, text: "<1.5s Response" },
-                            { icon: Bot, text: "AI-Powered" }
+                            { icon: Bot, text: "AI Tutor" }
                         ].map((item, i) => (
                             <div key={i} className="flex items-center gap-1.5 px-3 py-1.5 bg-slate-50 border border-slate-100 rounded-full text-xs font-semibold text-slate-600">
                                 <item.icon className="w-3.5 h-3.5 text-primary" />
@@ -180,12 +180,12 @@ export default function Hero() {
                                     {/* Nav Items */}
                                     <div className="space-y-1 flex-1">
                                         <div className="px-3 py-2.5 bg-primary/[0.07] text-primary text-[13px] font-bold rounded-lg flex items-center justify-between border border-primary/10">
-                                            Dashboard
+                                            Study Dashboard
                                             <span className="w-2 h-2 rounded-full bg-emerald-500 shadow-[0_0_6px_rgba(16,185,129,0.5)] animate-pulse"></span>
                                         </div>
                                         <div className="px-3 py-2.5 text-slate-500 text-[13px] font-medium rounded-lg hover:bg-slate-50 transition-colors">Settings</div>
-                                        <div className="px-3 py-2.5 text-slate-500 text-[13px] font-medium rounded-lg hover:bg-slate-50 transition-colors">History Logs</div>
-                                        <div className="px-3 py-2.5 text-slate-500 text-[13px] font-medium rounded-lg hover:bg-slate-50 transition-colors">Auto-Solver</div>
+                                        <div className="px-3 py-2.5 text-slate-500 text-[13px] font-medium rounded-lg hover:bg-slate-50 transition-colors">Study History</div>
+                                        <div className="px-3 py-2.5 text-slate-500 text-[13px] font-medium rounded-lg hover:bg-slate-50 transition-colors">AI Chat</div>
                                     </div>
 
                                     {/* Bottom Stats Card */}
@@ -222,12 +222,12 @@ export default function Hero() {
                                     {/* Top bar */}
                                     <div className="flex items-center justify-between mb-6">
                                         <h3 className="text-[20px] font-bold text-slate-900 tracking-tight">
-                                            Active Quiz Session
+                                            Active Study Session
                                         </h3>
                                         <div className="hidden sm:flex items-center gap-2">
                                             <div className="flex items-center gap-1.5 px-2.5 py-1 bg-emerald-50 border border-emerald-100 rounded-full">
                                                 <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" />
-                                                <span className="text-[10px] font-bold text-emerald-600 tracking-wide uppercase">Ghost Active</span>
+                                                <span className="text-[10px] font-bold text-emerald-600 tracking-wide uppercase">Tutor Active</span>
                                             </div>
                                             <div className="flex items-center gap-1.5 px-2.5 py-1 bg-blue-50 border border-blue-100 rounded-full">
                                                 <span className="text-[10px] font-bold text-blue-600">Q4 of 15</span>

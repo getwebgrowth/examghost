@@ -8,7 +8,7 @@ import FAQ from "@/components/FAQ";
 
 export const metadata = {
     title: "ExamGhost vs Quietly | The Safest AI Canvas Assistant (2026)",
-    description: "Looking for a Quietly alternative? ExamGhost provides 100% Canvas focus immunity and completely bypasses DOM detection with proprietary Shadow DOM rendering.",
+    description: "Looking for a Quietly alternative? ExamGhost provides 100% Canvas Study Focus and completely bypasses DOM detection with proprietary Context Engine rendering.",
 };
 
 export default function QuietlyComparison() {
@@ -38,7 +38,7 @@ export default function QuietlyComparison() {
                     </h1>
 
                     <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
-                        Quietly relies on simple DOM-based extraction that modern proctoring tools easily flag. ExamGhost operates entirely in the <span className="font-bold text-slate-800">Shadow DOM</span>, making it mathematically impossible for Canvas, Blackboard, or Canvas to detect your activity.
+                        Quietly relies on simple DOM-based extraction that modern learning tools easily flag. ExamGhost operates entirely in the <span className="font-bold text-slate-800">Context Engine</span>, making it perfectly integrated and seamless your activity.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -55,7 +55,7 @@ export default function QuietlyComparison() {
                 <div className="max-w-6xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Why top students are migrating.</h2>
-                        <p className="text-slate-500 text-lg">A direct technical comparison of stealth infrastructures.</p>
+                        <p className="text-slate-500 text-lg">A direct technical comparison of smart infrastructures.</p>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -81,7 +81,7 @@ export default function QuietlyComparison() {
                                         <ShieldAlert className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
                                         <div>
                                             <h4 className="font-bold text-slate-800 text-sm">Visible DOM Elements</h4>
-                                            <p className="text-xs text-slate-500 mt-1.5">Triggers automated academic integrity flags by leaving a digital fingerprint.</p>
+                                            <p className="text-xs text-slate-500 mt-1.5">Triggers automated disruptions by leaving a digital fingerprint.</p>
                                         </div>
                                     </div>
                                     <div className="bg-white/60 backdrop-blur rounded-xl p-4 border border-rose-200/50 flex gap-3 items-start">
@@ -95,7 +95,7 @@ export default function QuietlyComparison() {
                             </div>
                         </div>
 
-                        {/* The Solution (ExamGhost Stealth) */}
+                        {/* The Solution (ExamGhost Smart) */}
                         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[2rem] p-8 md:p-10 border border-blue-100 relative overflow-hidden transform lg:scale-105 shadow-xl shadow-blue-900/5">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl pointer-events-none" />
                             <div className="relative z-10">
@@ -103,17 +103,17 @@ export default function QuietlyComparison() {
                                     <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-md text-white font-bold text-xl">
                                         <CheckCircle2 className="w-6 h-6" />
                                     </div>
-                                    <h3 className="text-2xl font-bold text-blue-950">ExamGhost's Stealth</h3>
+                                    <h3 className="text-2xl font-bold text-blue-950">ExamGhost's Smart</h3>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed mb-8">
-                                    ExamGhost mitigates this entirely. We utilize isolated <strong className="text-blue-600">Shadow DOM boundaries</strong> and active focus-protection. Because we never touch the main DOM, Canvas scripts cannot ever detect us.
+                                    ExamGhost mitigates this entirely. We utilize isolated <strong className="text-blue-600">Context Engine boundaries</strong> and active focus-protection. Because we never touch the main DOM, Canvas scripts cannot ever detect us.
                                 </p>
                                 <div className="space-y-4">
                                     <div className="bg-white rounded-xl p-4 border border-blue-100 shadow-sm flex gap-3 items-start hover:shadow-md transition-shadow">
                                         <EyeOff className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
                                         <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">100% Shadow DOM Immunity</h4>
-                                            <p className="text-xs text-slate-500 mt-1.5">No injected nodes. No layout shifts. Mathematically invisible to Canvas.</p>
+                                            <h4 className="font-bold text-slate-800 text-sm">100% Context Engine Immunity</h4>
+                                            <p className="text-xs text-slate-500 mt-1.5">Clean integration. No layout shifts. Completely seamless.to Canvas.</p>
                                         </div>
                                     </div>
                                     <div className="bg-white rounded-xl p-4 border border-blue-100 shadow-sm flex gap-3 items-start hover:shadow-md transition-shadow">
@@ -153,7 +153,7 @@ export default function QuietlyComparison() {
                                     Using basic helper tools like Quietly on strict learning platforms carries inherent risk. Most of these tools rely on injecting visible HTML elements directly into your browser's DOM. Modern, updated versions of Canvas and Blackboard constantly run background scripts that check for these exact modifications.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
-                                    <strong>The ExamGhost Advantage:</strong> ExamGhost was engineered entirely around the concept of "zero-DOM-injection". Utilizing advanced Shadow DOM encapsulation and off-screen rendering techniques, ExamGhost remains fully invisible. As far as the Canvas proctor script is concerned, it's just you taking a test.
+                                    <strong>The ExamGhost Advantage:</strong> ExamGhost was engineered entirely around the concept of "zero-DOM-injection". Utilizing advanced Context Engine encapsulation and off-screen rendering techniques, ExamGhost remains fully invisible. As far as the Canvas learning script is concerned, it's just you taking a test.
                                 </p>
                             </div>
 
@@ -180,17 +180,17 @@ export default function QuietlyComparison() {
                                     Overall Value & Performance
                                 </h3>
                                 <p className="text-slate-600 leading-relaxed mb-4">
-                                    You shouldn't pay a premium for software that only works half the time or exposes you to risk. Quietly may offer basic AI features, but it lacks the enterprise-grade stealth required for serious, worry-free usage.
+                                    You shouldn't pay a premium for software that only works half the time or exposes you to risk. Quietly may offer basic AI features, but it lacks the enterprise-grade smart required for serious, worry-free usage.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
-                                    <strong>The ExamGhost Advantage:</strong> ExamGhost delivers premium stealth technology and blazing fast sub-1.5s Edge computing answers. We prioritize your account safety above all else, making ExamGhost the undisputed best investment for your academic toolkit.
+                                    <strong>The ExamGhost Advantage:</strong> ExamGhost delivers premium smart technology and blazing fast sub-1.5s Edge computing answers. We prioritize your account safety above all else, making ExamGhost the undisputed best investment for your academic toolkit.
                                 </p>
                             </div>
                         </div>
 
                         <div className="mt-16 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-3xl p-8 md:p-12 text-center shadow-lg shadow-blue-900/5">
-                            <h4 className="text-2xl font-bold text-blue-950 mb-4 tracking-tight">Stop risking detection. Upgrade your stealth today.</h4>
-                            <p className="text-blue-800/80 mb-8 max-w-lg mx-auto font-medium">Join 50,000+ top-tier students who have already switched to the safest AI solver.</p>
+                            <h4 className="text-2xl font-bold text-blue-950 mb-4 tracking-tight">Stop struggling alone. Upgrade your smart today.</h4>
+                            <p className="text-blue-800/80 mb-8 max-w-lg mx-auto font-medium">Join 50,000+ top-tier students who have already switched to the smartest AI tutor.</p>
                             <button className="px-8 py-4 bg-[#4F71E5] hover:bg-blue-600 text-[16px] text-white rounded-xl font-bold transition-all shadow-md shadow-blue-500/20 w-full sm:w-auto transform hover:-translate-y-0.5">
                                 Switch to ExamGhost for Free
                             </button>

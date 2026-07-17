@@ -8,8 +8,8 @@ export default function GhostMode() {
 
     const steps = [
         {
-            title: "Find what to do in 2 seconds.",
-            description: "No more scrolling through clunky notes or minimizing windows. Just hit your secret shortcut (like Cmd+Shift+X) and the Ghost activates invisibly on your current screen. It's like having an Ivy League tutor instantly available at your fingertips.",
+            title: "Find what to learn in 2 seconds.",
+            description: "No more scrolling through clunky notes or minimizing windows. Just hit your secret shortcut (like Cmd+Shift+X) and the Tutor activates instantly on your current screen. It's like having an Ivy League tutor instantly available at your fingertips.",
             icon: Zap,
             visual: (
                 <div className="w-full h-full bg-[#f8fafc] flex items-center justify-center relative overflow-hidden">
@@ -35,15 +35,15 @@ export default function GhostMode() {
                         {/* Status notification */}
                         <div className="status-popup px-4 py-2 bg-white/80 backdrop-blur-md border border-slate-100 rounded-full flex items-center gap-2 shadow-[0_4px_15px_rgba(0,0,0,0.03)] opacity-0">
                             <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full pulse-dot shadow-[0_0_8px_rgba(16,185,129,0.5)]" />
-                            <span className="text-[10px] font-bold text-slate-600 uppercase tracking-widest">Ghost Activated</span>
+                            <span className="text-[10px] font-bold text-slate-600 uppercase tracking-widest">Tutor Activated</span>
                         </div>
                     </div>
                 </div>
             )
         },
         {
-            title: "Out-smart detection seamlessly.",
-            description: "ExamGhost takes an invisible, secure snapshot of your screen. It precisely extracts the question without ever triggering Proctorio, Respondus, or any screen-recording flags. You stay 100% safe while the AI does the heavy lifting.",
+            title: "Study safely and seamlessly.",
+            description: "ExamGhost takes a secure snapshot of your screen. It precisely extracts the question to provide step-by-step guidance without disrupting your workflow. You stay focused while the AI tutor assists you.",
             icon: ShieldCheck,
             visual: (
                 <div className="w-full h-full bg-[#f8fafc] flex items-center justify-center relative overflow-hidden">
@@ -80,8 +80,8 @@ export default function GhostMode() {
             )
         },
         {
-            title: "Get guaranteed correct answers.",
-            description: "A sleek, transparent window pops up over the question. It doesn't just give you the answer—it provides the exact logic and step-by-step breakdown so you can understand the reasoning and crush your exam with confidence.",
+            title: "Get step-by-step guidance.",
+            description: "A sleek window pops up over the question. Our AI tutor provides the exact logic and step-by-step breakdown so you can understand the reasoning and master your studies with confidence.",
             icon: Bot,
             visual: (
                 <div className="w-full h-full bg-[#f8fafc] flex items-center justify-center relative overflow-hidden">
@@ -221,8 +221,8 @@ export default function GhostMode() {
                         <span className="text-[13px] font-semibold text-white tracking-wide">Simple 3-step process</span>
                     </div>
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white tracking-tight leading-[1.15] max-w-3xl">
-                        No more boring tools... <br className="hidden sm:block" />
-                        <span className="text-blue-200 italic font-medium">Find what to do in 2 seconds.</span>
+                        No more confusing topics... <br className="hidden sm:block" />
+                        <span className="text-blue-200 italic font-medium">Find what to learn in 2 seconds.</span>
                     </h2>
                 </motion.div>
 
@@ -327,7 +327,7 @@ export default function GhostMode() {
                 >
                     <a href="#pricing" className="inline-flex items-center justify-center px-8 py-3.5 bg-white text-slate-900 rounded-full font-bold text-[15px] hover:bg-slate-50 transition-all shadow-xl shadow-white/10 group hover:-translate-y-0.5 relative overflow-hidden z-20">
                         <span className="relative z-10 flex items-center gap-2">
-                            Stop stressful exams <Zap className="w-4 h-4 text-[#2563eb] group-hover:scale-110 transition-transform" />
+                            Start learning smarter <Zap className="w-4 h-4 text-[#2563eb] group-hover:scale-110 transition-transform" />
                         </span>
                         <div className="absolute inset-0 bg-gradient-to-r from-transparent via-slate-100/50 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_ease-out_infinite]" />
                     </a>

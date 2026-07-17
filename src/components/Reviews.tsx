@@ -108,7 +108,7 @@ export default function Reviews() {
                         />
                         <ReviewCard
                             name="Aila Singh" date="Jul 19, 2024"
-                            text="absolute lifesaver 💯 I never have time to study and it comes in clutch every single time."
+                            text="absolute lifesaver 💯 It helps me learn complex topics fast when I'm short on study time."
                             rating={5} count="5" location="US" avatarColor="bg-slate-700" initials="AS"
                         />
                     </div>

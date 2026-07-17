@@ -8,7 +8,7 @@ import FAQ from "@/components/FAQ";
 
 export const metadata = {
     title: "ExamGhost vs TestBro | The Ultimate AI Test Assistant (2026)",
-    description: "Looking for a TestBro alternative? ExamGhost automatically extracts questions via Shadow DOM. No manual text selection required. 100% Canvas safe.",
+    description: "Looking for a TestBro alternative? ExamGhost automatically extracts questions via Context Engine. No manual text selection required. 100% Canvas safe.",
 };
 
 export default function TestBroComparison() {
@@ -38,7 +38,7 @@ export default function TestBroComparison() {
                     </h1>
 
                     <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
-                        TestBro forces you to drag, select, and manually highlight questions. ExamGhost's proprietary <span className="font-bold text-slate-800">Auto-Extract AI</span> instantly reads your screen via the Shadow DOM. Get answers before you even click.
+                        TestBro forces you to drag, select, and manually highlight questions. ExamGhost's proprietary <span className="font-bold text-slate-800">Auto-Extract AI</span> instantly reads your screen via the Context Engine. Get answers before you even click.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -55,7 +55,7 @@ export default function TestBroComparison() {
                 <div className="max-w-6xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Why top students are migrating.</h2>
-                        <p className="text-slate-500 text-lg">A direct technical comparison of stealth infrastructures.</p>
+                        <p className="text-slate-500 text-lg">A direct technical comparison of smart infrastructures.</p>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -73,7 +73,7 @@ export default function TestBroComparison() {
                                     <h3 className="text-2xl font-bold text-slate-900">TestBro's Flaw</h3>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed mb-8">
-                                    TestBro relies heavily on manual text selection and "Ask" buttons. Not only is this workflow slow, but interacting with text during a locked-down exam <strong className="text-rose-600">triggers mouse tracking events</strong> that proctors actively monitor.
+                                    TestBro relies heavily on manual text selection and "Ask" buttons. Not only is this workflow slow, but interacting with text during a locked-down exam <strong className="text-rose-600">triggers mouse tracking events</strong> that learnings actively monitor.
                                 </p>
                                 <div className="space-y-4">
                                     <div className="bg-white/60 backdrop-blur rounded-xl p-4 border border-rose-200/50 flex gap-3 items-start">
@@ -94,7 +94,7 @@ export default function TestBroComparison() {
                             </div>
                         </div>
 
-                        {/* The Solution (ExamGhost Stealth) */}
+                        {/* The Solution (ExamGhost Smart) */}
                         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[2rem] p-8 md:p-10 border border-blue-100 relative overflow-hidden transform lg:scale-105 shadow-xl shadow-blue-900/5">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl pointer-events-none" />
                             <div className="relative z-10">
@@ -102,10 +102,10 @@ export default function TestBroComparison() {
                                     <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-md text-white font-bold text-xl">
                                         <CheckCircle2 className="w-6 h-6" />
                                     </div>
-                                    <h3 className="text-2xl font-bold text-blue-950">ExamGhost's Stealth</h3>
+                                    <h3 className="text-2xl font-bold text-blue-950">ExamGhost's Smart</h3>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed mb-8">
-                                    ExamGhost completely eliminates manual interaction. Our <strong className="text-blue-600">Auto-Extract Engine</strong> reads the active DOM tree silently via the Shadow DOM, providing answers alongside the question automatically.
+                                    ExamGhost completely eliminates manual interaction. Our <strong className="text-blue-600">Auto-Extract Engine</strong> reads the active DOM tree silently via the Context Engine, providing answers alongside the question automatically.
                                 </p>
                                 <div className="space-y-4">
                                     <div className="bg-white rounded-xl p-4 border border-blue-100 shadow-sm flex gap-3 items-start hover:shadow-md transition-shadow">
@@ -118,7 +118,7 @@ export default function TestBroComparison() {
                                     <div className="bg-white rounded-xl p-4 border border-blue-100 shadow-sm flex gap-3 items-start hover:shadow-md transition-shadow">
                                         <EyeOff className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
                                         <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">100% Canvas Safe</h4>
+                                            <h4 className="font-bold text-slate-800 text-sm">100% Seamless Integration</h4>
                                             <p className="text-xs text-slate-500 mt-1.5">No copy events. No highlight tracking. Completely invisible overlay.</p>
                                         </div>
                                     </div>
@@ -149,10 +149,10 @@ export default function TestBroComparison() {
                                     The Danger of Manual Selection
                                 </h3>
                                 <p className="text-slate-600 leading-relaxed mb-4">
-                                    TestBro relies entirely on the user manually highlighting text to initiate a search. What most students don't realize is that premium proctoring modules heavily monitor mouse behavior. Dragging and highlighting text, or triggering the `copy` event, is one of the fastest ways to flag your session.
+                                    TestBro relies entirely on the user manually highlighting text to initiate a search. What most students don't realize is that premium learning modules heavily monitor mouse behavior. Dragging and highlighting text, or triggering the `copy` event, is one of the fastest ways to flag your session.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
-                                    <strong>The ExamGhost Advantage:</strong> ExamGhost fundamentally reimagines the workflow. Using our intelligent Auto-Extract Engine, ExamGhost reads the page context via the Shadow DOM instantly. There is zero manual selection required. No highlighting, no copy-pasting—just answers cleanly overlaid on your screen automatically.
+                                    <strong>The ExamGhost Advantage:</strong> ExamGhost fundamentally reimagines the workflow. Using our intelligent Auto-Extract Engine, ExamGhost reads the page context via the Context Engine instantly. There is zero manual selection required. No highlighting, no copy-pasting—just answers cleanly overlaid on your screen automatically.
                                 </p>
                             </div>
 
@@ -188,8 +188,8 @@ export default function TestBroComparison() {
                         </div>
 
                         <div className="mt-16 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-3xl p-8 md:p-12 text-center shadow-lg shadow-blue-900/5">
-                            <h4 className="text-2xl font-bold text-blue-950 mb-4 tracking-tight">Stop risking detection. Upgrade your stealth today.</h4>
-                            <p className="text-blue-800/80 mb-8 max-w-lg mx-auto font-medium">Join 50,000+ top-tier students who have already switched to the safest AI solver.</p>
+                            <h4 className="text-2xl font-bold text-blue-950 mb-4 tracking-tight">Stop struggling alone. Upgrade your smart today.</h4>
+                            <p className="text-blue-800/80 mb-8 max-w-lg mx-auto font-medium">Join 50,000+ top-tier students who have already switched to the smartest AI tutor.</p>
                             <button className="px-8 py-4 bg-[#4F71E5] hover:bg-blue-600 text-[16px] text-white rounded-xl font-bold transition-all shadow-md shadow-blue-500/20 w-full sm:w-auto transform hover:-translate-y-0.5">
                                 Switch to ExamGhost for Free
                             </button>

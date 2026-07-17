@@ -55,7 +55,7 @@ export default function QuizardComparison() {
                 <div className="max-w-6xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Why top students are migrating.</h2>
-                        <p className="text-slate-500 text-lg">A direct technical comparison of stealth infrastructures.</p>
+                        <p className="text-slate-500 text-lg">A direct technical comparison of smart infrastructures.</p>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -73,7 +73,7 @@ export default function QuizardComparison() {
                                     <h3 className="text-2xl font-bold text-slate-900">Quizard's Flaw</h3>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed mb-8">
-                                    Quizard is designed as a mobile app. Using it during a midterm means you have to physically pick up your phone and point your camera at the screen. <strong className="text-rose-600">Proctoring webcams catch this instantly.</strong>
+                                    Quizard is designed as a mobile app. Using it during a midterm means you have to physically pick up your phone and point your camera at the screen. <strong className="text-rose-600">learning webcams catch this instantly.</strong>
                                 </p>
                                 <div className="space-y-4">
                                     <div className="bg-white/60 backdrop-blur rounded-xl p-4 border border-rose-200/50 flex gap-3 items-start">
@@ -94,7 +94,7 @@ export default function QuizardComparison() {
                             </div>
                         </div>
 
-                        {/* The Solution (ExamGhost Stealth) */}
+                        {/* The Solution (ExamGhost Smart) */}
                         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[2rem] p-8 md:p-10 border border-blue-100 relative overflow-hidden transform lg:scale-105 shadow-xl shadow-blue-900/5">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl pointer-events-none" />
                             <div className="relative z-10">
@@ -102,10 +102,10 @@ export default function QuizardComparison() {
                                     <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-md text-white font-bold text-xl">
                                         <CheckCircle2 className="w-6 h-6" />
                                     </div>
-                                    <h3 className="text-2xl font-bold text-blue-950">ExamGhost's Stealth</h3>
+                                    <h3 className="text-2xl font-bold text-blue-950">ExamGhost's Smart</h3>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed mb-8">
-                                    ExamGhost completely eliminates manual interaction. Our <strong className="text-blue-600">Auto-Extract Engine</strong> reads the active DOM tree silently via the Shadow DOM, providing answers alongside the question automatically.
+                                    ExamGhost completely eliminates manual interaction. Our <strong className="text-blue-600">Auto-Extract Engine</strong> reads the active DOM tree silently via the Context Engine, providing answers alongside the question automatically.
                                 </p>
                                 <div className="space-y-4">
                                     <div className="bg-white rounded-xl p-4 border border-blue-100 shadow-sm flex gap-3 items-start hover:shadow-md transition-shadow">
@@ -152,7 +152,7 @@ export default function QuizardComparison() {
                                     Quizard heavily markets its mobile app scanning capabilities. While scanning a worksheet at home is great, attempting to pull out your phone and snap a picture of a monitor during a locked-down Canvas or Respondus session is a massive academic integrity violation. Webcams track eye movement, pupil dilation, and physical hand movements rigorously.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
-                                    <strong>The ExamGhost Advantage:</strong> ExamGhost is built directly into your desktop environment. Our Shadow DOM overlay places the answers directly next to the questions on your screen. You never have to break eye contact with your webcam, move your hands off the keyboard, or exhibit any suspicious behavior.
+                                    <strong>The ExamGhost Advantage:</strong> ExamGhost is built directly into your desktop environment. Our Context Engine overlay places the answers directly next to the questions on your screen. You never have to break eye contact with your webcam, move your hands off the keyboard, or exhibit any suspicious behavior.
                                 </p>
                             </div>
 
@@ -182,14 +182,14 @@ export default function QuizardComparison() {
                                     Quizard is fantastic for a casual study session or homework help. But when you are in a high-stakes, timed, and actively monitored environment, using a mobile study app translates to an immense, unnecessary risk.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
-                                    <strong>The ExamGhost Advantage:</strong> ExamGhost is purpose-built for the rigorous constraints of modern proctoring. By intercepting blur events, masking visibility states, and rendering strictly in the Shadow DOM, ExamGhost provides an enterprise-grade safety net that study apps simply cannot offer.
+                                    <strong>The ExamGhost Advantage:</strong> ExamGhost is purpose-built for the rigorous constraints of modern learning. By intercepting blur events, masking visibility states, and rendering strictly in the Context Engine, ExamGhost provides an enterprise-grade safety net that study apps simply cannot offer.
                                 </p>
                             </div>
                         </div>
 
                         <div className="mt-16 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-3xl p-8 md:p-12 text-center shadow-lg shadow-blue-900/5">
-                            <h4 className="text-2xl font-bold text-blue-950 mb-4 tracking-tight">Stop risking detection. Upgrade your stealth today.</h4>
-                            <p className="text-blue-800/80 mb-8 max-w-lg mx-auto font-medium">Join 50,000+ top-tier students who have already switched to the safest AI solver.</p>
+                            <h4 className="text-2xl font-bold text-blue-950 mb-4 tracking-tight">Stop struggling alone. Upgrade your smart today.</h4>
+                            <p className="text-blue-800/80 mb-8 max-w-lg mx-auto font-medium">Join 50,000+ top-tier students who have already switched to the smartest AI tutor.</p>
                             <button className="px-8 py-4 bg-[#4F71E5] hover:bg-blue-600 text-[16px] text-white rounded-xl font-bold transition-all shadow-md shadow-blue-500/20 w-full sm:w-auto transform hover:-translate-y-0.5">
                                 Switch to ExamGhost for Free
                             </button>

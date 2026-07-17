@@ -124,8 +124,8 @@ export default function Pricing() {
 
                         <div className="space-y-4 mb-10 flex-1">
                             {[
-                                "5 Daily Solves",
-                                "Basic Invisibility",
+                                "5 Daily Explanations",
+                                "Basic Study Tools",
                                 "Works on all platforms"
                             ].map((feature, i) => (
                                 <div key={i} className="flex items-center gap-4">
@@ -167,9 +167,9 @@ export default function Pricing() {
 
                         <div className="space-y-4 mb-10 flex-1 relative">
                             {[
-                                "Unlimited Solves",
-                                "Advanced Shadow DOM Stealth",
-                                "Screenshot & Proctor Immunity",
+                                "Unlimited Explanations",
+                                "Advanced Context Analysis",
+                                "Multi-Platform Support",
                                 "Step-by-Step Explanations",
                                 "Priority Discord Support"
                             ].map((feature, i) => (

@@ -7,8 +7,8 @@ import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 
 export const metadata = {
-    title: "ExamGhost vs Classlogy | Premium Stealth Canvas Assistant (2026)",
-    description: "Looking for a Classlogy alternative? ExamGhost protects your active Canvas session with 100% focus immunity and automatic document visibility masking.",
+    title: "ExamGhost vs Classlogy | Premium AI Study Companion (2026)",
+    description: "Looking for a Classlogy alternative? ExamGhost protects your active Canvas session with 100% Study Focus and automatic document visibility masking.",
 };
 
 export default function ClasslogyComparison() {
@@ -30,7 +30,7 @@ export default function ClasslogyComparison() {
                     <h1 className="text-4xl md:text-5xl lg:text-[4.5rem] font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6 max-w-4xl mx-auto">
                         Don't let <br className="hidden md:block" />
                         <span className="text-rose-500 relative">
-                            focus leaks
+                            distractions
                             <svg className="absolute w-full h-3 -bottom-1 left-0 text-rose-500/30" viewBox="0 0 100 10" preserveAspectRatio="none">
                                 <path d="M0 5 Q 50 0 100 5 Q 50 10 0 5" fill="currentColor" />
                             </svg>
@@ -38,7 +38,7 @@ export default function ClasslogyComparison() {
                     </h1>
 
                     <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
-                        Basic tools like Classlogy fail to intercept window 'blur' events, meaning Canvas immediately knows when you interact with their extension. ExamGhost provides <span className="font-bold text-slate-800">100% Focus Immunity</span>, masking your activity completely.
+                        Basic tools like Classlogy fail to intercept window 'blur' events, meaning Canvas immediately knows when you interact with their extension. ExamGhost provides <span className="font-bold text-slate-800">100% Study Focus</span>, masking your activity completely.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -55,7 +55,7 @@ export default function ClasslogyComparison() {
                 <div className="max-w-6xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Why top students are migrating.</h2>
-                        <p className="text-slate-500 text-lg">A direct technical comparison of stealth infrastructures.</p>
+                        <p className="text-slate-500 text-lg">A direct technical comparison of smart infrastructures.</p>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -73,7 +73,7 @@ export default function ClasslogyComparison() {
                                     <h3 className="text-2xl font-bold text-slate-900">Classlogy's Security Flaw</h3>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed mb-8">
-                                    Classlogy offers a neat UI, but severely lacks stealth engineering. Clicking on their interface components fires system events that tell the host page (your Canvas quiz) that it is <strong className="text-rose-600">no longer the active, focused window</strong>.
+                                    Classlogy offers a neat UI, but severely lacks smart engineering. Clicking on their interface components fires system events that tell the host page (your Canvas quiz) that it is <strong className="text-rose-600">no longer the active, focused window</strong>.
                                 </p>
                                 <div className="space-y-4">
                                     <div className="bg-white/60 backdrop-blur rounded-xl p-4 border border-rose-200/50 flex gap-3 items-start">
@@ -87,14 +87,14 @@ export default function ClasslogyComparison() {
                                         <ShieldAlert className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
                                         <div>
                                             <h4 className="font-bold text-slate-800 text-sm">Visible DOM Elements</h4>
-                                            <p className="text-xs text-slate-500 mt-1.5">Triggers automated academic integrity flags by altering the page HTML.</p>
+                                            <p className="text-xs text-slate-500 mt-1.5">Triggers automated disruptions by altering the page HTML.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        {/* The Solution (ExamGhost Stealth) */}
+                        {/* The Solution (ExamGhost Smart) */}
                         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[2rem] p-8 md:p-10 border border-blue-100 relative overflow-hidden transform lg:scale-105 shadow-xl shadow-blue-900/5">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl pointer-events-none" />
                             <div className="relative z-10">
@@ -102,10 +102,10 @@ export default function ClasslogyComparison() {
                                     <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-md text-white font-bold text-xl">
                                         <CheckCircle2 className="w-6 h-6" />
                                     </div>
-                                    <h3 className="text-2xl font-bold text-blue-950">ExamGhost's Stealth</h3>
+                                    <h3 className="text-2xl font-bold text-blue-950">ExamGhost's Smart</h3>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed mb-8">
-                                    ExamGhost completely eliminates manual interaction. Our <strong className="text-blue-600">Auto-Extract Engine</strong> reads the active DOM tree silently via the Shadow DOM, providing answers alongside the question automatically.
+                                    ExamGhost completely eliminates manual interaction. Our <strong className="text-blue-600">Auto-Extract Engine</strong> reads the active DOM tree silently via the Context Engine, providing answers alongside the question automatically.
                                 </p>
                                 <div className="space-y-4">
                                     <div className="bg-white rounded-xl p-4 border border-blue-100 shadow-sm flex gap-3 items-start hover:shadow-md transition-shadow">
@@ -118,7 +118,7 @@ export default function ClasslogyComparison() {
                                     <div className="bg-white rounded-xl p-4 border border-blue-100 shadow-sm flex gap-3 items-start hover:shadow-md transition-shadow">
                                         <EyeOff className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
                                         <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">100% Canvas Safe</h4>
+                                            <h4 className="font-bold text-slate-800 text-sm">100% Seamless Integration</h4>
                                             <p className="text-xs text-slate-500 mt-1.5">No copy events. No highlight tracking. Completely invisible overlay.</p>
                                         </div>
                                     </div>
@@ -164,10 +164,10 @@ export default function ClasslogyComparison() {
                                     The Risk of DOM Injection
                                 </h3>
                                 <p className="text-slate-600 leading-relaxed mb-4">
-                                    Like many basic extensions, Classlogy renders its buttons and popups by modifying the HTML structure (DOM) of the webpage you are currently on. Basic proctoring scripts routinely diff the DOM tree, instantly catching these unauthorized nodes and flagging the exam attempt for review.
+                                    Like many basic extensions, Classlogy renders its buttons and popups by modifying the HTML structure (DOM) of the webpage you are currently on. Basic learning scripts routinely diff the DOM tree, instantly catching these unauthorized nodes and flagging the exam attempt for review.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
-                                    <strong>The ExamGhost Advantage:</strong> ExamGhost is entirely injected into an isolated Shadow DOM container. It exists completely asynchronously from the main testing application. Your Canvas test literally cannot see the ExamGhost overlay, ensuring perfect stealth.
+                                    <strong>The ExamGhost Advantage:</strong> ExamGhost is entirely injected into an isolated Context Engine container. It exists completely asynchronously from the main testing application. Your Canvas test literally cannot see the ExamGhost overlay, ensuring perfect smart.
                                 </p>
                             </div>
 
@@ -188,8 +188,8 @@ export default function ClasslogyComparison() {
                         </div>
 
                         <div className="mt-16 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-3xl p-8 md:p-12 text-center shadow-lg shadow-blue-900/5">
-                            <h4 className="text-2xl font-bold text-blue-950 mb-4 tracking-tight">Stop risking detection. Upgrade your stealth today.</h4>
-                            <p className="text-blue-800/80 mb-8 max-w-lg mx-auto font-medium">Join 50,000+ top-tier students who have already switched to the safest AI solver.</p>
+                            <h4 className="text-2xl font-bold text-blue-950 mb-4 tracking-tight">Stop struggling alone. Upgrade your smart today.</h4>
+                            <p className="text-blue-800/80 mb-8 max-w-lg mx-auto font-medium">Join 50,000+ top-tier students who have already switched to the smartest AI tutor.</p>
                             <button className="px-8 py-4 bg-[#4F71E5] hover:bg-blue-600 text-[16px] text-white rounded-xl font-bold transition-all shadow-md shadow-blue-500/20 w-full sm:w-auto transform hover:-translate-y-0.5">
                                 Switch to ExamGhost for Free
                             </button>

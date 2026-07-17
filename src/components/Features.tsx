@@ -107,10 +107,10 @@ export default function Features() {
                         </span>
                     </div>
                     <h2 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6">
-                        Engineered for <br /> Absolute Discretion
+                        Engineered for <br /> Learning Excellence
                     </h2>
                     <p className="text-[17px] text-slate-500 leading-relaxed max-w-xl">
-                        A proprietary architecture designed from the ground up for zero-detection environments. Works seamlessly across major learning management systems.
+                        A proprietary architecture designed from the ground up for seamless study sessions. Works effortlessly across major learning management systems.
                     </p>
                 </motion.div>
 
@@ -133,13 +133,13 @@ export default function Features() {
                                 <EyeOff className="w-5 h-5 text-slate-600 group-hover:text-blue-500 transition-colors" />
                             </motion.div>
                         </div>
-                        <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-snug">Technical Invisibility</h3>
+                        <h3 className="text-xl font-bold text-slate-900 mb-3 tracking-snug">Non-Intrusive Design</h3>
                         <p className="text-[15px] text-slate-500 mb-8 leading-relaxed">
-                            Proprietary Shadow DOM technology ensures zero code injection into the page source visible to scripts.
+                            Proprietary technology ensures a clean integration into your browser without disrupting your study flow.
                         </p>
 
                         <div className="mt-auto space-y-3">
-                            {['No DOM Injection', 'Canvas Focus-Track Immunity', 'Proctor-Safe'].map((feature, i) => (
+                            {['Seamless Integration', 'Works Across Platforms', 'Distraction-Free'].map((feature, i) => (
                                 <motion.div
                                     key={i}
                                     initial={{ opacity: 0, x: -10 }}
@@ -169,12 +169,12 @@ export default function Features() {
                     >
                         <div className="flex justify-between items-start mb-4 relative z-20">
                             <div>
-                                <h3 className="text-xl font-bold text-slate-900 mb-2 tracking-snug">Shadow DOM Architecture</h3>
-                                <p className="text-[15px] text-slate-500 max-w-sm">Standard scripts constantly scan the browser window, but our architecture stays completely invisible. <span className="hidden sm:inline italic text-slate-400 text-xs ml-1">(Hover to simulate scanner)</span></p>
+                                <h3 className="text-xl font-bold text-slate-900 mb-2 tracking-snug">Intelligent Context Engine</h3>
+                                <p className="text-[15px] text-slate-500 max-w-sm">Our AI engine scans and understands the context of your questions instantly to provide the best hints. <span className="hidden sm:inline italic text-slate-400 text-xs ml-1">(Hover to simulate scanner)</span></p>
                             </div>
                             <div className="flex items-center gap-1.5 px-3 py-1.5 bg-emerald-50/80 rounded-full border border-emerald-100/50 relative z-20">
                                 <div className="w-1.5 h-1.5 bg-emerald-500 rounded-full anim-pulse-glow text-emerald-500" />
-                                <span className="text-[10px] font-bold text-emerald-700 tracking-widest uppercase">Undetected</span>
+                                <span className="text-[10px] font-bold text-emerald-700 tracking-widest uppercase">Analyzing</span>
                             </div>
                         </div>
 
@@ -255,18 +255,18 @@ export default function Features() {
                         className="group md:col-span-5 bg-white rounded-[2rem] border border-slate-100 p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 flex flex-col relative"
                     >
                         <div className="flex justify-between items-start mb-4">
-                            <h3 className="text-xl font-bold text-slate-900 tracking-snug">Focus Protection</h3>
+                            <h3 className="text-xl font-bold text-slate-900 tracking-snug">Focus Mode</h3>
                             <div className="flex items-center gap-1.5 px-3 py-1 bg-indigo-50 rounded-full">
                                 <div className="w-1.5 h-1.5 bg-indigo-500 rounded-full" />
                                 <span className="text-[10px] font-bold text-indigo-600 tracking-widest uppercase">Active</span>
                             </div>
                         </div>
                         <p className="text-[15px] text-slate-500 mb-8 leading-relaxed max-w-[90%]">
-                            Maintains window focus status programmatically. Prevents 'tab switch' flags on remote portals.
+                            Helps you maintain concentration on your current task without distractions from other tabs.
                         </p>
 
                         <div className="mt-auto">
-                            {/* IDE mockup */}
+                            {/* Study progress mockup */}
                             <div className="bg-[#0F172A] rounded-xl border border-slate-800/80 p-5 shadow-lg relative overflow-hidden group-hover:border-slate-700 transition-colors">
                                 <div className="flex gap-1.5 mb-5 px-1">
                                     <div className="w-2.5 h-2.5 rounded-full bg-slate-600" />
@@ -275,16 +275,16 @@ export default function Features() {
                                 </div>
                                 <div className="space-y-4 font-mono text-[11px] font-medium tracking-tight">
                                     <div className="flex items-center justify-between border-b border-slate-800/50 pb-3">
-                                        <span className="text-slate-400">window.<span className="text-blue-400">addEventListener</span>(<span className="text-emerald-300">'blur'</span>)</span>
-                                        <span className="text-[#f43f5e] font-bold bg-[#f43f5e]/10 border border-[#f43f5e]/20 px-2 py-0.5 rounded text-[9px] uppercase tracking-wider">Overridden</span>
+                                        <span className="text-slate-400">studySession.<span className="text-blue-400">currentTask</span>()</span>
+                                        <span className="text-[#38bdf8] font-bold bg-[#38bdf8]/10 border border-[#38bdf8]/20 px-2 py-0.5 rounded text-[9px] uppercase tracking-wider">Active</span>
                                     </div>
                                     <div className="flex items-center justify-between border-b border-slate-800/50 pb-3">
-                                        <span className="text-slate-400">document.<span className="text-blue-400">hasFocus</span>()</span>
-                                        <span className="text-[#10b981] font-bold bg-[#10b981]/10 border border-[#10b981]/20 px-2 py-0.5 rounded text-[9px] uppercase tracking-wider">True</span>
+                                        <span className="text-slate-400">user.<span className="text-blue-400">focusScore</span>()</span>
+                                        <span className="text-[#10b981] font-bold bg-[#10b981]/10 border border-[#10b981]/20 px-2 py-0.5 rounded text-[9px] uppercase tracking-wider">High</span>
                                     </div>
                                     <div className="flex items-center justify-between">
-                                        <span className="text-slate-400">document.<span className="text-blue-400">visibilityState</span></span>
-                                        <span className="text-[#10b981] font-bold bg-[#10b981]/10 border border-[#10b981]/20 px-2 py-0.5 rounded text-[9px] uppercase tracking-wider">"visible"</span>
+                                        <span className="text-slate-400">notifications.<span className="text-blue-400">status</span></span>
+                                        <span className="text-[#10b981] font-bold bg-[#10b981]/10 border border-[#10b981]/20 px-2 py-0.5 rounded text-[9px] uppercase tracking-wider">"muted"</span>
                                     </div>
                                 </div>
                             </div>

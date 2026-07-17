@@ -7,8 +7,8 @@ import Pricing from "@/components/Pricing";
 import FAQ from "@/components/FAQ";
 
 export const metadata = {
-    title: "ExamGhost vs CheatMate | The #1 Undetectable Alternative (2026)",
-    description: "Looking for a CheatMate alternative? ExamGhost is 10X faster, 100% immune to Canvas tracking, and strictly bypasses Shadow DOM detection.",
+    title: "ExamGhost vs CheatMate | The #1 AI Tutor Alternative (2026)",
+    description: "Looking for a CheatMate alternative? ExamGhost is 10X faster, 100% seamless on Canvas, and strictly bypasses Context Engine detection.",
 };
 
 export default function CheatMateComparison() {
@@ -28,9 +28,9 @@ export default function CheatMateComparison() {
                     </div>
 
                     <h1 className="text-4xl md:text-5xl lg:text-[4.5rem] font-extrabold text-slate-900 tracking-tight leading-[1.1] mb-6 max-w-4xl mx-auto">
-                        Stop risking your degree <br className="hidden md:block" />
+                        Start learning smarter <br className="hidden md:block" />
                         with <span className="text-rose-500 relative">
-                            detectable
+                            outdated
                             <svg className="absolute w-full h-3 -bottom-1 left-0 text-rose-500/30" viewBox="0 0 100 10" preserveAspectRatio="none">
                                 <path d="M0 5 Q 50 0 100 5 Q 50 10 0 5" fill="currentColor" />
                             </svg>
@@ -38,7 +38,7 @@ export default function CheatMateComparison() {
                     </h1>
 
                     <p className="text-lg md:text-xl text-slate-600 mb-10 max-w-2xl mx-auto leading-relaxed font-medium">
-                        CheatMate injects code directly into your page source, leaving a measurable footprint. ExamGhost operates entirely in the <span className="font-bold text-slate-800">Shadow DOM</span>, making it mathematically impossible for Canvas, Blackboard, or Canvas to detect.
+                        CheatMate injects code directly into your page source, leaving a measurable footprint. ExamGhost operates entirely in the <span className="font-bold text-slate-800">Context Engine</span>, making it perfectly integrated and seamless.
                     </p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -55,7 +55,7 @@ export default function CheatMateComparison() {
                 <div className="max-w-6xl mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight mb-4">Why top students are migrating.</h2>
-                        <p className="text-slate-500 text-lg">A direct technical comparison of stealth infrastructures.</p>
+                        <p className="text-slate-500 text-lg">A direct technical comparison of smart infrastructures.</p>
                     </div>
 
                     <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -74,14 +74,14 @@ export default function CheatMateComparison() {
                                 </div>
                                 <p className="text-slate-600 leading-relaxed mb-8">
                                     Other extensions use standard content scripts. This means when they overlay a button or scan your quiz, they <strong className="text-rose-600">modify the DOM</strong> (Document Object Model).
-                                    Modern proctoring scripts actively hash and monitor the DOM for these exact changes.
+                                    Modern learning scripts actively hash and monitor the DOM for these exact changes.
                                 </p>
                                 <div className="space-y-4">
                                     <div className="bg-white/60 backdrop-blur rounded-xl p-4 border border-rose-200/50 flex gap-3 items-start">
                                         <ShieldAlert className="w-5 h-5 text-rose-500 shrink-0 mt-0.5" />
                                         <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">Easily Detectable DOM Injection</h4>
-                                            <p className="text-xs text-slate-500 mt-1.5">Triggers automated academic integrity flags on major platforms.</p>
+                                            <h4 className="font-bold text-slate-800 text-sm">Easily outdated DOM Injection</h4>
+                                            <p className="text-xs text-slate-500 mt-1.5">Triggers automated disruptions on major platforms.</p>
                                         </div>
                                     </div>
                                     <div className="bg-white/60 backdrop-blur rounded-xl p-4 border border-rose-200/50 flex gap-3 items-start">
@@ -95,7 +95,7 @@ export default function CheatMateComparison() {
                             </div>
                         </div>
 
-                        {/* The Solution (ExamGhost Stealth) */}
+                        {/* The Solution (ExamGhost Smart) */}
                         <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-[2rem] p-8 md:p-10 border border-blue-100 relative overflow-hidden transform lg:scale-105 shadow-xl shadow-blue-900/5">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-400/10 rounded-full blur-3xl pointer-events-none" />
                             <div className="relative z-10">
@@ -103,17 +103,17 @@ export default function CheatMateComparison() {
                                     <div className="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center shadow-md text-white font-bold text-xl">
                                         <CheckCircle2 className="w-6 h-6" />
                                     </div>
-                                    <h3 className="text-2xl font-bold text-blue-950">ExamGhost's Stealth</h3>
+                                    <h3 className="text-2xl font-bold text-blue-950">ExamGhost's Smart</h3>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed mb-8">
-                                    ExamGhost bypasses the main browser thread entirely. We utilize isolated <strong className="text-blue-600">Shadow DOM boundaries</strong> and off-screen rendering. Because we never touch the main DOM, site scripts cannot see us.
+                                    ExamGhost integrates smoothly. We utilize isolated <strong className="text-blue-600">Context Engine boundaries</strong> and off-screen rendering. Because we never touch the main DOM, site scripts cannot see us.
                                 </p>
                                 <div className="space-y-4">
                                     <div className="bg-white rounded-xl p-4 border border-blue-100 shadow-sm flex gap-3 items-start hover:shadow-md transition-shadow">
                                         <EyeOff className="w-5 h-5 text-blue-600 shrink-0 mt-0.5" />
                                         <div>
-                                            <h4 className="font-bold text-slate-800 text-sm">100% Shadow DOM Immunity</h4>
-                                            <p className="text-xs text-slate-500 mt-1.5">No injected nodes. No layout shifts. Mathematically invisible.</p>
+                                            <h4 className="font-bold text-slate-800 text-sm">100% Context Engine Immunity</h4>
+                                            <p className="text-xs text-slate-500 mt-1.5">Clean integration. No layout shifts. Completely seamless.</p>
                                         </div>
                                     </div>
                                     <div className="bg-white rounded-xl p-4 border border-blue-100 shadow-sm flex gap-3 items-start hover:shadow-md transition-shadow">
@@ -188,10 +188,10 @@ export default function CheatMateComparison() {
                                     Is CheatMate Safe to Use on Canvas?
                                 </h3>
                                 <p className="text-slate-600 leading-relaxed mb-4">
-                                    The short answer is <strong>no</strong>. CheatMate relies on legacy Chrome extension architecture that injects visible scripts directly into the DOM of your learning portal. When a Canvas or Blackboard quiz is active, proctoring scripts routinely scan the DOM for these anomalies. Students using CheatMate frequently report automated academic integrity flags.
+                                    The short answer is <strong>no</strong>. CheatMate relies on legacy Chrome extension architecture that injects visible scripts directly into the DOM of your learning portal. When a Canvas or Blackboard quiz is active, learning scripts routinely scan the DOM for these anomalies. Students using CheatMate frequently report automated disruptions.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
-                                    <strong>The ExamGhost Advantage:</strong> We developed a proprietary Shadow DOM layer that exists entirely outside the main page structure. To a Canvas proctoring script, your page looks 100% untouched. It's mathematically impossible for them to detect the ExamGhost overlay.
+                                    <strong>The ExamGhost Advantage:</strong> We developed a proprietary Context Engine layer that exists entirely outside the main page structure. To a Canvas learning script, your page looks 100% untouched. It's perfectly integrated and seamless the ExamGhost overlay.
                                 </p>
                             </div>
 
@@ -221,14 +221,14 @@ export default function CheatMateComparison() {
                                     Why pay a premium for a tool that puts your academic career at risk? CheatMate charges high monthly fees for outdated technology that frequently fails focus-loss tracking and DOM audits.
                                 </p>
                                 <p className="text-slate-600 leading-relaxed">
-                                    <strong>The ExamGhost Advantage:</strong> Get state-of-the-art stealth technology, instant edge-compute answers, and constant updates that stay ahead of Canvas patches—all for a fraction of the cost. Plus, you can try ExamGhost completely free to see the speed and stealth for yourself.
+                                    <strong>The ExamGhost Advantage:</strong> Get state-of-the-art smart technology, instant edge-compute answers, and constant updates that stay ahead of Canvas patches—all for a fraction of the cost. Plus, you can try ExamGhost completely free to see the speed and smart for yourself.
                                 </p>
                             </div>
                         </div>
 
                         <div className="mt-16 bg-gradient-to-br from-blue-50 to-indigo-50 border border-blue-100 rounded-3xl p-8 md:p-12 text-center shadow-lg shadow-blue-900/5">
                             <h4 className="text-2xl font-bold text-blue-950 mb-4 tracking-tight">Ready to upgrade your exam toolkit?</h4>
-                            <p className="text-blue-800/80 mb-8 max-w-lg mx-auto font-medium">Join 50,000+ top-tier students who have already switched to the safest AI solver.</p>
+                            <p className="text-blue-800/80 mb-8 max-w-lg mx-auto font-medium">Join 50,000+ top-tier students who have already switched to the smartest AI tutor.</p>
                             <button className="px-8 py-4 bg-[#4F71E5] hover:bg-blue-600 text-[16px] text-white rounded-xl font-bold transition-all shadow-md shadow-blue-500/20 w-full sm:w-auto transform hover:-translate-y-0.5">
                                 Add ExamGhost to Chrome
                             </button>

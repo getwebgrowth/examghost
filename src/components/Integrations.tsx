@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 
 export default function Integrations() {
     const features = [
-        { icon: Zap, text: "Instantly solves questions overlaid on your screen." },
-        { icon: Check, text: "Provides 100% correct answers directly inside the quiz." },
+        { icon: Zap, text: "Instantly explains concepts overlaid on your screen." },
+        { icon: Check, text: "Provides step-by-step guidance directly inside the study material." },
         { icon: Shield, text: "Works flawlessly on Canvas, Blackboard, and McGraw Hill." },
-        { icon: Eye, text: "Proven to bypass all screen recording and proctoring tools." }
+        { icon: Eye, text: "Proven to help students learn faster and improve grades." }
     ];
 
     const logos = [
@@ -33,7 +33,7 @@ export default function Integrations() {
             >
                 <div className="max-w-7xl mx-auto px-4 text-center mb-8">
                     <p className="text-sm font-semibold text-slate-500 uppercase tracking-widest">
-                        Join 50,000+ top students crushing exams on
+                        Join 50,000+ top students learning smarter on
                     </p>
                 </div>
 
@@ -91,7 +91,7 @@ export default function Integrations() {
                         <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 tracking-tight mb-6 leading-tight">
                             Like ChatGPT, but <br />
                             <span className="text-primary tracking-normal relative inline-block">
-                                with real stealth.
+                                built for learning.
                                 <motion.span
                                     className="absolute -bottom-2 left-0 w-full h-1.5 bg-blue-200 rounded-full z-[-1]"
                                     initial={{ width: 0 }}
