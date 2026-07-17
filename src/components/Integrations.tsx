@@ -11,7 +11,7 @@ export default function Integrations() {
         { icon: GraduationCap, text: "Proven to help students learn faster and improve grades." }
     ];
 
-    const logos = [
+    const logos: Array<{ name: string; color: string; bold?: boolean; italic?: boolean; serif?: boolean; circle?: boolean; rounded?: boolean }> = [
         { name: "Coursera", color: "#0056D2", bold: true },
         { name: "edX", color: "#02262B", bold: true },
         { name: "Google Scholar", color: "#4285F4", circle: true },

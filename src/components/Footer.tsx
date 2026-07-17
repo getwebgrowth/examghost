@@ -102,26 +102,7 @@ export default function Footer() {
                             </ul>
                         </div>
  
-                        {/* Column 3: Compare */}
-                        <div>
-                            <h4 className="font-bold text-slate-800 mb-5 tracking-tight text-[14px]">Compare Alternatives</h4>
-                            <ul className="space-y-3.5">
-                                {[
-                                    { name: 'CheatMate Alternative', path: '/cheatmate-vs-examghost' },
-                                    { name: 'Quietly Alternative', path: '/usequietly-vs-examghost' },
-                                    { name: 'TestBro Alternative', path: '/testbro-vs-examghost' },
-                                    { name: 'Quizard Alternative', path: '/quizard-vs-examghost' },
-                                    { name: 'Mindko Alternative', path: '/mindko-vs-examghost' },
-                                    { name: 'Classlogy Alternative', path: '/classlogy-vs-examghost' }
-                                ].map(link => (
-                                    <li key={link.path}>
-                                        <a href={link.path} className="text-slate-500 hover:text-[#3b82f6] transition-colors font-medium">
-                                            {link.name}
-                                        </a>
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
+
  
                     </div>
  

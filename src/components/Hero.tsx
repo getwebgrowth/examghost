@@ -79,13 +79,13 @@ export default function Hero() {
                 {/* Text Content */}
                 <div className="text-center max-w-4xl mx-auto mb-16 relative z-30">
                     <h1 className="text-4xl sm:text-6xl md:text-[4.5rem] font-extrabold tracking-tight text-slate-900 mb-6 leading-[1.1]">
-                        Master your studies & homework <br className="hidden md:block" />
+                        Meet ExamGhost, <br className="hidden md:block" />
                         <span className="text-primary italic relative">
-                            effortlessly
+                            your AI Tutor
                             <svg className="absolute -bottom-2 left-0 w-full" viewBox="0 0 200 8" fill="none">
                                 <path d="M2 6c30-4 60-4 90-2s70 2 106-2" stroke="currentColor" strokeWidth="3" strokeLinecap="round" className="text-primary/30" />
                             </svg>
-                        </span>{' '}with ExamGhost.
+                        </span>{' '}and studemate.
                     </h1>
 
                     <p className="text-lg sm:text-xl text-slate-600 mb-10 max-w-2xl mx-auto font-medium">
