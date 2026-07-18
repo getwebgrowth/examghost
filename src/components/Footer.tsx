@@ -94,6 +94,13 @@ export default function Footer() {
                     </div>
                 </div>
 
+                {/* Disclaimer */}
+                <div className="border-t border-white/5 pt-6 pb-6 text-center">
+                    <p className="text-[11px] text-slate-500 max-w-2xl mx-auto leading-relaxed">
+                        Disclaimer: ExamGhost is an independent AI Tutor, AI Quiz Helper, and AI Teacher extension powered by Google Gemini Flash. Google, Gemini, Canvas, Blackboard, Coursera, Khan Academy, and Moodle are trademarks of their respective owners. ExamGhost is not officially associated with or endorsed by these platforms. Users can also bring their own Gemini API key for custom usage.
+                    </p>
+                </div>
+
                 {/* Bottom bar */}
                 <div className="border-t border-white/5 pt-7 flex flex-col sm:flex-row items-center justify-between gap-3">
                     <p className="text-[12px] text-slate-600">

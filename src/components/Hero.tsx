@@ -92,6 +92,18 @@ export default function Hero() {
                     </a>
                 </motion.div>
 
+                {/* Powered by Gemini and BYOK disclaimer */}
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.6, delay: 0.35 }}
+                    className="text-[12px] text-slate-500 mb-8 max-w-md mx-auto leading-relaxed"
+                >
+                    Powered by <span className="text-blue-400 font-semibold">Gemini Flash</span>. 
+                    Bring your own Gemini API key or use built-in usage credits. 
+                    <span className="block mt-1 text-[11px] text-slate-600">ExamGhost is an independent study assistant and is not affiliated with Google or Gemini.</span>
+                </motion.div>
+
                 {/* Social proof */}
                 <motion.div
                     initial={{ opacity: 0 }}

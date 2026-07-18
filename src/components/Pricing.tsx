@@ -149,6 +149,9 @@ export default function Pricing() {
                             ✦ Start for Free
                         </button>
                         <p className="text-[12px] text-slate-600 mt-4">No credit card required · Cancel anytime · 7-day money-back guarantee</p>
+                        <p className="text-[11px] text-slate-500 mt-6 max-w-lg mx-auto leading-relaxed border-t border-white/5 pt-4">
+                            All plans are powered by Google Gemini Flash. You can also bring your own Gemini API key for custom rate limits. ExamGhost is an independent tool and is not officially affiliated with Google or Gemini.
+                        </p>
                     </div>
                 </motion.div>
             </div>
