@@ -1,6 +1,6 @@
 'use client';
 import { motion } from 'framer-motion';
-import { Sparkles, BookOpen, Brain, Star, GraduationCap } from 'lucide-react';
+import { Sparkles, BookOpen, Brain, GraduationCap } from 'lucide-react';
 import { FaChrome } from 'react-icons/fa';
 
 export default function Hero() {
@@ -78,7 +78,7 @@ export default function Hero() {
                     className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
                 >
                     <a
-                        href="#"
+                        href="https://chromewebstore.google.com/"
                         className="flex items-center gap-2.5 px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold text-[16px] rounded-xl transition-all shadow-[0_0_40px_rgba(59,130,246,0.35)] hover:shadow-[0_0_60px_rgba(59,130,246,0.5)] hover:-translate-y-0.5 w-full sm:w-auto justify-center"
                     >
                         <FaChrome className="w-5 h-5" />
@@ -111,21 +111,13 @@ export default function Hero() {
                     transition={{ duration: 0.6, delay: 0.4 }}
                     className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-[13px] text-slate-500"
                 >
-                    <div className="flex items-center gap-2">
-                        <div className="flex -space-x-2">
-                            {['bg-blue-400', 'bg-indigo-400', 'bg-violet-400', 'bg-sky-400'].map((c, i) => (
-                                <div key={i} className={`w-7 h-7 rounded-full border-2 border-[#070b15] ${c}`} />
-                            ))}
-                        </div>
-                        <span className="font-medium">50,000+ learners</span>
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                        {[...Array(5)].map((_, i) => <Star key={i} className="w-3.5 h-3.5 fill-amber-400 text-amber-400" />)}
-                        <span className="font-medium">4.9 rating</span>
-                    </div>
                     <div className="flex items-center gap-1.5">
                         <BookOpen className="w-4 h-4 text-blue-500" />
-                        <span className="font-medium">50+ subjects supported</span>
+                        <span className="font-medium">50+ academic subjects supported</span>
+                    </div>
+                    <div className="flex items-center gap-1.5">
+                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                        <span className="font-medium">Works on Canvas, Blackboard & more</span>
                     </div>
                 </motion.div>
 

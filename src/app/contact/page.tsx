@@ -1,7 +1,7 @@
 'use client';
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Mail, MessageCircle, Clock, Bot } from "lucide-react";
+import { Mail, Clock, Bot } from "lucide-react";
 import { useState } from "react";
 
 export default function ContactPage() {
@@ -43,19 +43,6 @@ export default function ContactPage() {
                             </a>
                         </div>
 
-                        <div className="bg-[#0c1220] border border-white/6 rounded-2xl p-6">
-                            <div className="w-10 h-10 bg-indigo-600/10 border border-indigo-500/20 rounded-xl flex items-center justify-center mb-4">
-                                <MessageCircle className="w-5 h-5 text-indigo-400" />
-                            </div>
-                            <h3 className="text-[15px] font-bold text-white mb-2">Discord Community</h3>
-                            <p className="text-slate-500 text-sm mb-4">Quick answers, feature requests, and community support.</p>
-                            <a
-                                href="#"
-                                className="inline-flex items-center gap-2 px-4 py-2 bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-xl font-semibold text-sm transition-all"
-                            >
-                                Join our Discord
-                            </a>
-                        </div>
 
                         <div className="bg-[#0c1220] border border-white/6 rounded-2xl p-6">
                             <div className="w-10 h-10 bg-emerald-600/10 border border-emerald-500/20 rounded-xl flex items-center justify-center mb-4">

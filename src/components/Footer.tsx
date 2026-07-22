@@ -1,7 +1,6 @@
 'use client';
-import { Bot, Instagram, Youtube } from 'lucide-react';
-import { FaChrome, FaTiktok } from 'react-icons/fa';
-import { Mail } from 'lucide-react';
+import { Bot, Mail } from 'lucide-react';
+import { FaChrome } from 'react-icons/fa';
 
 export default function Footer() {
     return (
@@ -21,7 +20,7 @@ export default function Footer() {
                             Your AI-powered tutor and study companion — available everywhere you learn.
                         </p>
                         <a
-                            href="#"
+                            href="https://chromewebstore.google.com/"
                             className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-[13px] font-semibold rounded-lg transition-all shadow-lg shadow-blue-600/20"
                         >
                             <FaChrome className="w-3.5 h-3.5" />
@@ -69,21 +68,6 @@ export default function Footer() {
                     {/* Contact */}
                     <div>
                         <h4 className="text-[12px] font-bold text-slate-400 uppercase tracking-widest mb-4">Connect</h4>
-                        <div className="flex gap-3 mb-5">
-                            {[
-                                { icon: Instagram, href: '#' },
-                                { icon: Youtube, href: '#' },
-                                { icon: FaTiktok, href: '#' },
-                            ].map(({ icon: Icon, href }, i) => (
-                                <a
-                                    key={i}
-                                    href={href}
-                                    className="w-8 h-8 rounded-lg bg-white/5 border border-white/8 flex items-center justify-center text-slate-500 hover:text-white hover:border-white/20 transition-all"
-                                >
-                                    <Icon className="w-3.5 h-3.5" />
-                                </a>
-                            ))}
-                        </div>
                         <a
                             href="mailto:support@examghost.com"
                             className="flex items-center gap-2 text-[13px] text-slate-500 hover:text-slate-200 transition-colors font-medium"

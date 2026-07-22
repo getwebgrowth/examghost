@@ -144,7 +144,7 @@ export default function Pricing() {
                     <div className="glow-orb w-[400px] h-[200px] bg-blue-600/10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
                     <div className="relative z-10">
                         <h3 className="text-2xl font-bold text-white mb-2">Start learning smarter today</h3>
-                        <p className="text-slate-500 text-sm mb-7">Join 50,000+ students who use ExamGhost as their personal AI Tutor, Quiz Helper, and AI Teacher.</p>
+                        <p className="text-slate-500 text-sm mb-7">Join students who use ExamGhost as their personal AI Tutor, Quiz Helper, and AI Teacher.</p>
                         <button className="px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all shadow-[0_0_30px_rgba(59,130,246,0.3)] hover:-translate-y-0.5">
                             ✦ Start for Free
                         </button>
