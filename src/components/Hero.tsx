@@ -78,7 +78,7 @@ export default function Hero() {
                     className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
                 >
                     <a
-                        href="https://chromewebstore.google.com/"
+                        href="https://chromewebstore.google.com/detail/curio-ai-tutor-homework-h/dejkoepiachnbgjjooocnnmampldmpde"
                         className="flex items-center gap-2.5 px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold text-[16px] rounded-xl transition-all shadow-[0_0_40px_rgba(59,130,246,0.35)] hover:shadow-[0_0_60px_rgba(59,130,246,0.5)] hover:-translate-y-0.5 w-full sm:w-auto justify-center"
                     >
                         <FaChrome className="w-5 h-5" />
@@ -114,10 +114,6 @@ export default function Hero() {
                     <div className="flex items-center gap-1.5">
                         <BookOpen className="w-4 h-4 text-blue-500" />
                         <span className="font-medium">50+ academic subjects supported</span>
-                    </div>
-                    <div className="flex items-center gap-1.5">
-                        <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                        <span className="font-medium">Works on Canvas, Blackboard & more</span>
                     </div>
                 </motion.div>
 

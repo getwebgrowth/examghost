@@ -20,7 +20,7 @@ export default function Footer() {
                             Your AI-powered tutor and study companion — available everywhere you learn.
                         </p>
                         <a
-                            href="https://chromewebstore.google.com/"
+                            href="https://chromewebstore.google.com/detail/curio-ai-tutor-homework-h/dejkoepiachnbgjjooocnnmampldmpde"
                             className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-[13px] font-semibold rounded-lg transition-all shadow-lg shadow-blue-600/20"
                         >
                             <FaChrome className="w-3.5 h-3.5" />
