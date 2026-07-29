@@ -1,10 +1,11 @@
 'use client';
 import React, { useState, useEffect } from 'react';
 import { Bot } from 'lucide-react';
-import { FaChrome } from 'react-icons/fa';
+import { useAuth } from './AuthContext';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
+    const { openAuth } = useAuth();
 
     useEffect(() => {
         const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -43,13 +44,20 @@ export default function Navbar() {
                 </div>
 
                 {/* CTA */}
-                <a
-                    href="https://chromewebstore.google.com/detail/curio-ai-tutor-homework-h/dejkoepiachnbgjjooocnnmampldmpde"
-                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-[13px] font-semibold rounded-lg transition-all shadow-lg shadow-blue-600/25 active:scale-95"
-                >
-                    <FaChrome className="w-3.5 h-3.5" />
-                    <span>Add to Chrome</span>
-                </a>
+                <div className="flex items-center gap-4">
+                    <button
+                        onClick={() => openAuth('login')}
+                        className="text-[13px] font-semibold text-slate-300 hover:text-white transition-colors"
+                    >
+                        Sign In
+                    </button>
+                    <button
+                        onClick={() => openAuth('register')}
+                        className="flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-[13px] font-semibold rounded-lg transition-all shadow-lg shadow-blue-600/25 active:scale-95"
+                    >
+                        Register Now
+                    </button>
+                </div>
             </div>
         </nav>
     );

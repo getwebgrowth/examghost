@@ -1,8 +1,10 @@
 'use client';
 import { Bot, Mail } from 'lucide-react';
-import { FaChrome } from 'react-icons/fa';
+import { useAuth } from './AuthContext';
 
 export default function Footer() {
+    const { openAuth } = useAuth();
+
     return (
         <footer className="bg-[#060a12] border-t border-white/5">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 py-14">
@@ -19,13 +21,12 @@ export default function Footer() {
                         <p className="text-slate-500 text-[13px] leading-relaxed mb-5">
                             Your AI-powered tutor and study companion — available everywhere you learn.
                         </p>
-                        <a
-                            href="https://chromewebstore.google.com/detail/curio-ai-tutor-homework-h/dejkoepiachnbgjjooocnnmampldmpde"
+                        <button
+                            onClick={() => openAuth('register')}
                             className="inline-flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white text-[13px] font-semibold rounded-lg transition-all shadow-lg shadow-blue-600/20"
                         >
-                            <FaChrome className="w-3.5 h-3.5" />
-                            Add to Chrome
-                        </a>
+                            Register Now
+                        </button>
                     </div>
 
                     {/* Product */}

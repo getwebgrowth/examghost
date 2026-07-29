@@ -1,9 +1,11 @@
 'use client';
 import { motion } from 'framer-motion';
 import { Sparkles, BookOpen, Brain, GraduationCap } from 'lucide-react';
-import { FaChrome } from 'react-icons/fa';
+import { useAuth } from './AuthContext';
 
 export default function Hero() {
+    const { openAuth } = useAuth();
+
     return (
         <section className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden bg-[#070b15] grid-bg">
 
@@ -23,7 +25,7 @@ export default function Hero() {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-600/10 border border-blue-500/20 text-blue-400 text-[13px] font-semibold">
                         <Sparkles className="w-3.5 h-3.5" />
-                        AI Tutor · AI Quiz Helper · AI Teacher — Chrome Extension
+                        AI Tutor · AI Quiz Helper · AI Teacher — Learning Platform
                     </div>
                 </motion.div>
 
@@ -47,7 +49,7 @@ export default function Hero() {
                     transition={{ duration: 0.6, delay: 0.2 }}
                     className="text-lg sm:text-xl text-slate-400 max-w-2xl mx-auto mb-10 leading-relaxed font-medium"
                 >
-                    ExamGhost is an AI Tutor Chrome extension. Ask any study question, get clear step-by-step
+                    ExamGhost is an AI Tutor and study platform. Ask any study question, get clear step-by-step
                     explanations, and practice with AI-generated quizzes — so you actually <em>understand</em> the subject.
                 </motion.p>
 
@@ -77,13 +79,13 @@ export default function Hero() {
                     transition={{ duration: 0.6, delay: 0.3 }}
                     className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-10"
                 >
-                    <a
-                        href="https://chromewebstore.google.com/detail/curio-ai-tutor-homework-h/dejkoepiachnbgjjooocnnmampldmpde"
+                    <button
+                        onClick={() => openAuth('register')}
                         className="flex items-center gap-2.5 px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white font-bold text-[16px] rounded-xl transition-all shadow-[0_0_40px_rgba(59,130,246,0.35)] hover:shadow-[0_0_60px_rgba(59,130,246,0.5)] hover:-translate-y-0.5 w-full sm:w-auto justify-center"
                     >
-                        <FaChrome className="w-5 h-5" />
-                        Add to Chrome — It&apos;s Free
-                    </a>
+                        <Sparkles className="w-5 h-5 text-blue-200" />
+                        Register Now — It&apos;s Free
+                    </button>
                     <a
                         href="#how-it-works"
                         className="px-8 py-4 text-[15px] font-semibold text-slate-300 hover:text-white border border-white/10 hover:border-white/20 rounded-xl transition-all hover:bg-white/5 w-full sm:w-auto justify-center flex items-center"

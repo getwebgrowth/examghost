@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import { CheckCircle2, X } from 'lucide-react';
+import { useAuth } from './AuthContext';
 
 const plans = [
     {
@@ -58,6 +59,8 @@ const plans = [
 ];
 
 export default function Pricing() {
+    const { openAuth } = useAuth();
+
     return (
         <section id="pricing" className="py-28 bg-[#070b15] relative">
             <div className="glow-orb w-[600px] h-[400px] bg-blue-600/8 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
@@ -126,7 +129,10 @@ export default function Pricing() {
                                 ))}
                             </ul>
 
-                            <button className={`w-full py-2.5 px-4 rounded-xl font-bold text-[14px] transition-all ${plan.ctaStyle}`}>
+                            <button
+                                onClick={() => openAuth('register')}
+                                className={`w-full py-2.5 px-4 rounded-xl font-bold text-[14px] transition-all ${plan.ctaStyle}`}
+                            >
                                 {plan.cta}
                             </button>
                         </motion.div>
@@ -145,7 +151,10 @@ export default function Pricing() {
                     <div className="relative z-10">
                         <h3 className="text-2xl font-bold text-white mb-2">Start learning smarter today</h3>
                         <p className="text-slate-500 text-sm mb-7">Join students who use ExamGhost as their personal AI Tutor, Quiz Helper, and AI Teacher.</p>
-                        <button className="px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all shadow-[0_0_30px_rgba(59,130,246,0.3)] hover:-translate-y-0.5">
+                        <button
+                            onClick={() => openAuth('register')}
+                            className="px-8 py-3.5 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-xl transition-all shadow-[0_0_30px_rgba(59,130,246,0.3)] hover:-translate-y-0.5"
+                        >
                             ✦ Start for Free
                         </button>
                         <p className="text-[12px] text-slate-600 mt-4">No credit card required · Cancel anytime · 7-day money-back guarantee</p>
