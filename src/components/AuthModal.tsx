@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Mail, Lock, User, CheckCircle2, Loader2, Sparkles } from 'lucide-react';
-import { FaGithub } from 'react-icons/fa';
 import { useAuth } from './AuthContext';
 
 export default function AuthModal() {
@@ -63,11 +62,7 @@ export default function AuthModal() {
         setLoadingStep(0);
     };
 
-    const handleSocialClick = (platform: string) => {
-        setSubmittedEmail(`${platform.toLowerCase()}user@example.com`);
-        setStatus('loading');
-        setLoadingStep(0);
-    };
+
 
     const steps = [
         'Securing credentials...',
@@ -217,23 +212,6 @@ export default function AuthModal() {
                                 </button>
                             </form>
 
-                            {/* Divider */}
-                            <div className="flex items-center gap-3 my-6">
-                                <div className="h-px bg-white/5 flex-1" />
-                                <span className="text-[11px] font-bold text-slate-500 uppercase tracking-widest">Or continue with</span>
-                                <div className="h-px bg-white/5 flex-1" />
-                            </div>
-
-                            {/* Socials */}
-                            <div className="w-full">
-                                <button
-                                    onClick={() => handleSocialClick('GitHub')}
-                                    className="flex items-center justify-center gap-2 w-full py-3 bg-white/3 hover:bg-white/6 border border-white/8 hover:border-white/12 rounded-xl text-[13px] font-semibold text-slate-300 hover:text-white transition-all active:scale-[0.98]"
-                                >
-                                    <FaGithub className="w-3.5 h-3.5 text-slate-300" />
-                                    Continue with GitHub
-                                </button>
-                            </div>
                         </div>
                     )}
 
