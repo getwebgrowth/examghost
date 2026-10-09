@@ -4,7 +4,7 @@ import { COMPETITORS } from '@/data/competitors';
 import CompetitorPageTemplate from '@/components/CompetitorPageTemplate';
 import CompetitorJsonLd from '@/components/CompetitorJsonLd';
 
-const SLUG = 'testbro-vs-examghost';
+const SLUG = 'quizsolverai-vs-examghost';
 const competitor = COMPETITORS[SLUG];
 
 export const metadata: Metadata = {
